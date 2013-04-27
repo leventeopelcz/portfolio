@@ -311,10 +311,52 @@ header, section, footer {
 	position: relative;
 }
 
-h1, h2, blockquote, p, .block960 {
+h1, h2, h3, blockquote, p, .block960 {
 	max-width: 960px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+/* Map Styles */
+
+.map {
+	background: url(img/map.png) center top no-repeat;
+	height: 1735px;	
+}
+
+.map-wrapper {
+	padding: 0;
+}
+
+.map-1 {
+	padding-top: 230px;
+}
+
+.map-2 {
+	margin-top: 450px;
+}
+
+.map-2 span {
+	margin-left: 400px;
+}
+
+.map-3 {
+	margin-top: 350px;
+}
+
+.map-3 span {
+	margin-left: 300px;
+}
+
+.map-4 {
+	margin-top: 305px;
+}
+
+.map span {
+	display: inline;
+	padding: 5px 20px;
+	line-height: 51px;
+	background-color: #333;
 }
 
 /* Section Dividers */

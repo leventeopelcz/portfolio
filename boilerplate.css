@@ -215,7 +215,7 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author: 
+   Author: Levente Opelcz
    ========================================================================== */
 
 body {
@@ -287,6 +287,7 @@ ul {
 	list-style-type: none;
 	list-style: none;
 	margin: 0;
+	padding: 0;
 }
 
 li {
@@ -321,35 +322,11 @@ h1, h2, h3, blockquote, p, .block960 {
 
 .map {
 	background: url(img/map.png) center top no-repeat;
-	height: 1735px;	
+	height: 2400px;	
 }
 
 .map-wrapper {
 	padding: 0;
-}
-
-.map-1 {
-	padding-top: 230px;
-}
-
-.map-2 {
-	margin-top: 450px;
-}
-
-.map-2 span {
-	margin-left: 400px;
-}
-
-.map-3 {
-	margin-top: 350px;
-}
-
-.map-3 span {
-	margin-left: 300px;
-}
-
-.map-4 {
-	margin-top: 305px;
 }
 
 .map span {
@@ -357,6 +334,95 @@ h1, h2, h3, blockquote, p, .block960 {
 	padding: 5px 20px;
 	line-height: 51px;
 	background-color: #333;
+}
+
+.map-route-top, .map-route-bottom {
+	background: url(img/dashed-line.png) center top repeat-y;
+	position: relative;
+}
+
+.map-route-odd {
+	background: url(img/dashed-line.png) 70% top repeat-y;
+	position: relative;
+}
+
+.map-route-even {
+	background: url(img/dashed-line.png) 30% top repeat-y;
+	position: relative;
+}
+
+.map-route-odd:before, .map-route-odd:after,
+.map-route-even:before, .map-route-even:after,
+.map-route-top:after, .map-route-bottom:before {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: #333;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	position: absolute;
+	margin-left: -20px;
+}
+
+.map-route-odd:before, .map-route-odd:after {
+	left: 69.8%;
+}
+
+.map-route-even:before, .map-route-even:after {
+	left: 30.2%;
+}
+
+.map-route-top:after, .map-route-bottom:before {
+	left: 50%;
+}
+	
+.map-route-odd, .map-route-even {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.map-route-top {
+	margin-bottom: 40px;
+}
+
+.map-route-bottom {
+	margin-top: 40px;
+}
+
+.map-route-odd:before, .map-route-even:before, .map-route-bottom:before {
+	top: -20px;
+}
+
+.map-route-odd:after, .map-route-even:after, .map-route-top:after {
+	bottom: -20px;
+}
+
+.mr1 {
+	height: 280px;
+}
+
+.mr2 {
+	height: 1525px;
+}
+
+.mr3 {
+	height: 550px;
+}
+
+.half-width {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+}
+
+.row:after {
+	content:"";
+	display: block;
+	line-height: 0;
+	height: 0;
+	clear: both;
 }
 
 /* Section Dividers */

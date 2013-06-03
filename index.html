@@ -26,76 +26,84 @@ Do the following if you're using your customized build of modernizr (http://www.
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+<script src="skrollr.min.js"></script>
 <script src="respond.min.js"></script>
 </head>
+
 <body>
-<div class="clearfix">
-
-	<header class="text-center">
-		<img src="img/logo.png" alt="Lev1.0">
-	</header>
+	<div id="scrollr-body" class="clearfix">
 	
-	<section>
-		<ul class="block960 clearfix">
-			<li class="odd">
-				<h3>Project</h3>
-				<div class="img-placeholder"></div>
-				<p>At: <strong>Ayogo</strong></p>
-				<p>What: <strong>UI, Front End Coding</strong></p>
-			</li>
-			<li class="even">
-				<h3>Project</h3>
-				<div class="img-placeholder"></div>
-				<p>At: <strong>Ayogo</strong></p>
-				<p>What: <strong>UI, Front End Coding</strong></p>
-			</li>
-			<li class="odd">
-				<h3>Project</h3>
-				<div class="img-placeholder"></div>
-				<p>At: <strong>Ayogo</strong></p>
-				<p>What: <strong>UI, Front End Coding</strong></p>
-			</li>
-			<li class="even">
-				<h3>Project</h3>
-				<div class="img-placeholder"></div>
-				<p>At: <strong>Ayogo</strong></p>
-				<p>What: <strong>UI, Front End Coding</strong></p>
-			</li>
-		</ul>
-	</section>
-	
-	<article class="text-center map-wrapper">
-		<div class="map">
-			<div class="map-route-top mr1"></div>
-			<h2><span>And you keep going. You want to know what lies ahead...</span></h2>
-			<h2><span>But which way to take? You think for a moment.</span></h2>
-			<div class="row">
-				<div class="map-route-odd mr2 half-width"></div>
-				<div class="map-route-even mr3 half-width"></div>
-				<h2><span>You found a strange mask.</span></h2>
-				<h2><span>You try it on, and your life is never gonna be the same...</span></h2>
+		<header class="text-center">
+			<img src="img/logo.png" alt="Lev1.0">
+		</header>
+		
+		<section>
+			<ul class="block960 clearfix">
+				<li class="odd">
+					<h3>Project</h3>
+					<div class="img-placeholder"></div>
+					<p>At: <strong>Ayogo</strong></p>
+					<p>What: <strong>UI, Front End Coding</strong></p>
+				</li>
+				<li class="even">
+					<h3>Project</h3>
+					<div class="img-placeholder"></div>
+					<p>At: <strong>Ayogo</strong></p>
+					<p>What: <strong>UI, Front End Coding</strong></p>
+				</li>
+				<li class="odd">
+					<h3>Project</h3>
+					<div class="img-placeholder"></div>
+					<p>At: <strong>Ayogo</strong></p>
+					<p>What: <strong>UI, Front End Coding</strong></p>
+				</li>
+				<li class="even">
+					<h3>Project</h3>
+					<div class="img-placeholder"></div>
+					<p>At: <strong>Ayogo</strong></p>
+					<p>What: <strong>UI, Front End Coding</strong></p>
+				</li>
+			</ul>
+		</section>
+		
+		<article class="text-center map-wrapper">
+			<div class="map" data-top="background-position:0px 0px;" data-top-bottom="background-position:0px -200px;">
+				<div class="map-route-top mr1" data-bottom-top="height:0px" data-bottom="height:280px;"></div>
+				<h2><span data-0-bottom="background-color: rgba(0,0,0,0);" data-center-top="background-color: rgba(51,51,51,1)">And you keep going. You want to know what lies ahead...</span></h2>
+				<h2><span>But which way to take? You think for a moment.</span></h2>
+				<div class="row">
+					<div class="map-route-odd mr2 half-width"></div>
+					<div class="map-route-even mr3 half-width"></div>
+					<h2><span>You found a strange mask.</span></h2>
+					<h2><span>You try it on, and your life is never gonna be the same...</span></h2>
+				</div>
+				<h2><span>Then you found me, adventurer!</span></h2>
+				<div class="map-route-bottom mr1"></div>
 			</div>
-			<h2><span>Then you found me, adventurer!</span></h2>
-			<div class="map-route-bottom mr1"></div>
-		</div>
-	</article>
+		</article>
+		
+		<section>
+			<h1 class="text-center">Who am I?</h1>
+			<p class="columns">I was born in Budapest, Hungary. I have always enjoyed making other people smile, to make others happy and forget about their problems. I believe that there is no better way to do this than in the entertainment and video game industries. Video games take their players to another world, one full of fantastical places and amazing adventures where absolutely anything can happen. I have always wanted to be a part in creating and building these worlds. This is why I want to be a part of the video game industry.</p>
+		</section>
+		
+		<article class="text-center">
+			<blockquote>There is great satisfaction in bringing a design to life. A maluable creative process can make the difference between causing people to think and feel happy, or causing confusion and unhappiness.</blockquote>
+		</article>
 	
-	<section>
-		<h1 class="text-center">Who am I?</h1>
-		<p class="columns">I was born in Budapest, Hungary. I have always enjoyed making other people smile, to make others happy and forget about their problems. I believe that there is no better way to do this than in the entertainment and video game industries. Video games take their players to another world, one full of fantastical places and amazing adventures where absolutely anything can happen. I have always wanted to be a part in creating and building these worlds. This is why I want to be a part of the video game industry.</p>
-	</section>
+		<footer class="text-center">
+			<h1>Got anyhting to say?</h1>
+			<p>levente.opelcz@gmail.com</p>
+			<p>604-360-6225</p>
+			<p>Vancouver, BC</p>
+		</footer>
+		
+	</div>
 	
-	<article class="text-center">
-		<blockquote>There is great satisfaction in bringing a design to life. A maluable creative process can make the difference between causing people to think and feel happy, or causing confusion and unhappiness.</blockquote>
-	</article>
-
-	<footer class="text-center">
-		<h1>Got anyhting to say?</h1>
-		<p>levente.opelcz@gmail.com</p>
-		<p>604-360-6225</p>
-		<p>Vancouver, BC</p>
-	</footer>
-	
-</div>
+	<script type="text/javascript">
+	skrollr.init({
+		forceHeight: false
+	});
+	</script>
 </body>
 </html>

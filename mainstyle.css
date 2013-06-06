@@ -101,6 +101,7 @@ article:after {
 
 .row-fluid [class*="span"] {
 	position: relative;
+	min-height: 0;
 }
 
 h2 {
@@ -115,6 +116,8 @@ h2 {
 
 .map-route {
 	background: url(img/dashed-line.png) center top repeat-y;
+	display: block;
+	position: relative;
 }
 
 .bottom-dot {
@@ -135,9 +138,9 @@ h2 {
 	margin-left: -20px;
 	position: absolute;
 	left: 50%;
-	-webkit-border-radius: 20px;
-	   -moz-border-radius: 20px;
-	        border-radius: 20px;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
 }
 
 .map-dot-bottom {

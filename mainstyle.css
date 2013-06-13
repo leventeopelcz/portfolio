@@ -95,8 +95,7 @@ article:after {
 /* Map */
 
 .map {
-	background: url(img/map.png) center center no-repeat;
-	height: 2400px;
+	background: url(img/map.png) center center repeat-y;
 }
 
 .row-fluid [class*="span"] {

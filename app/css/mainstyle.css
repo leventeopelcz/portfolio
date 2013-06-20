@@ -5,13 +5,14 @@ body {
 	font-family: 'Arvo', serif;
 	font-size: 1em;
 	line-height: 1.8em;
-	background: url(img/noise.png) #f3f3f3;
+	background: url(../img/noise.png) #f3f3f3;
 }
 
 /* Typography */
 
 h1, h2, h3, blockquote {
 	font-family: 'Signika', sans-serif;
+	/*font-family: 'Cinzel Decorative', cursive;*/
 	line-height: 1.4em;
 }
 
@@ -42,7 +43,7 @@ header, section, footer {
 }
 
 article {
-	background: url(img/noise.png) #49adf6;
+	background: url(../img/noise.png) #49adf6;
 	color:#FFF;
 	position: relative;
 }
@@ -65,11 +66,11 @@ section:after, header:after, article:after {
 }
 
 section:after, header:after {
-	background: url(img/section-dividers.png) center top no-repeat;
+	background: url(../img/section-dividers.png) center top no-repeat;
 }
 
 article:after {
-	background: url(img/section-dividers.png) center bottom no-repeat;
+	background: url(../img/section-dividers.png) center bottom no-repeat;
 }
 
 /* Projects */
@@ -92,10 +93,14 @@ article:after {
 	margin-top: 30px;
 }
 
+[class*="span"].new-project-row {
+	margin-left: 0;
+}
+
 /* Map */
 
 .map {
-	background: url(img/map.png) center center repeat-y;
+	background: url(../img/map.png) center center repeat-y;
 }
 
 .row-fluid [class*="span"] {
@@ -114,7 +119,7 @@ h2 {
 /* Map Routes */
 
 .map-route {
-	background: url(img/dashed-line.png) center top repeat-y;
+	background: url(../img/dashed-line.png) center top repeat-y;
 	display: block;
 	position: relative;
 }

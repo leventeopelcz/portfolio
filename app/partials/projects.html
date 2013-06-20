@@ -1,0 +1,7 @@
+<div class="span3 project" ng-repeat="project in projects" ng-class="{'new-project-row': $index % 4 == 0}" ng-controller="projects_ctrl">
+	<h3>{{project.title}}</h3>
+	<div class="img-placeholder"></div>
+	<p>At: <strong>{{project.at}}</strong></p>
+	<p>What: <strong>UI, Front End Coding</strong></p>
+	<a href="#/project/{{$index + 1}}">See {{project.title}}</a>
+</div>

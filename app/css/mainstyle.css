@@ -93,10 +93,6 @@ article:after {
 	margin-top: 30px;
 }
 
-[class*="span"].new-project-row {
-	margin-left: 0;
-}
-
 /* Map */
 
 .map {

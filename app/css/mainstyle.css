@@ -7,6 +7,27 @@ body {
 	line-height: 1.8em;
 	background: url(../img/noise.png) #f3f3f3;
 }
+a.thumbnail {
+	line-height: inherit;
+	text-decoration: none;
+	color: #333;
+	padding: 5px;
+	border: none;
+	-webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+a.thumbnail:hover,
+a.thumbnail:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+	background-color: #333;
+	color: #fff;
+}
 
 /* Typography */
 
@@ -15,11 +36,9 @@ h1, h2, h3, blockquote {
 	/*font-family: 'Cinzel Decorative', cursive;*/
 	line-height: 1.4em;
 }
-
 h1 {
 	margin-top: 0;
 }
-
 h2, h3, blockquote {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -36,18 +55,15 @@ header img {
 section, header {
 	padding-bottom: 50px;
 }
-
 header, section, footer {
 	margin-top: 50px;
 	position: relative;
 }
-
 article {
 	background: url(../img/noise.png) #49adf6;
 	color:#FFF;
 	position: relative;
 }
-
 footer {
 	margin-bottom: 50px;
 }
@@ -64,31 +80,21 @@ section:after, header:after, article:after {
 	left: 0;
 	z-index: 5;
 }
-
 section:after, header:after {
 	background: url(../img/section-dividers.png) center top no-repeat;
 }
-
 article:after {
 	background: url(../img/section-dividers.png) center bottom no-repeat;
 }
 
 /* Projects */
 
-.img-placeholder {
-	width: 100%;
-	height: 200px;
-	background-color: #000;
-}
-
 .projects {
 	margin-top: 20px;
 }
-
 .projects p {
 	margin: 0;
 }
-
 .project {
 	margin-top: 30px;
 }
@@ -98,12 +104,10 @@ article:after {
 .map {
 	background: url(../img/map.png) center center repeat-y;
 }
-
 .row-fluid [class*="span"] {
 	position: relative;
 	min-height: 0;
 }
-
 h2 {
 	padding: 5px 20px;
 	line-height: 50px;
@@ -119,11 +123,9 @@ h2 {
 	display: block;
 	position: relative;
 }
-
 .bottom-dot {
 	margin-bottom: 40px;
 }
-
 .top-dot {
 	margin-top: 40px;
 }
@@ -142,11 +144,9 @@ h2 {
 	   -moz-border-radius: 50%;
 	        border-radius: 50%;
 }
-
 .map-dot-bottom {
 	bottom: -20px;
 }
-
 .map-dot-top {
 	top: -20px;
 }
@@ -156,11 +156,9 @@ h2 {
 .mr1 {
 	height: 280px;
 }
-
 .mr2 {
 	height: 1525px;
 }
-
 .mr3 {
 	height: 550px;
 }
@@ -171,7 +169,6 @@ h2 {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-
 blockquote {
 	padding: 0;
 	margin: 0;

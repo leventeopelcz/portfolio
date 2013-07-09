@@ -1,7 +1,10 @@
 <div class="row-fluid">
 	<section class="span12">
 		<h1>{{title}}</h1>
-		<h2>{{at}}</h2>
+		<h2>At: {{at}}</h2>
+		<h2 ng-show="client">Client: {{client}}</h2>
+		<h2>What:</h2>
+		<h2 ng-repeat="w in what">{{w}}</h2>
 		<p>{{info}}</p>
 		<a href="#/home">Go Back</a>
 	</section>

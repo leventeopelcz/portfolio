@@ -1,14 +1,24 @@
 <div class="row-fluid">
 	<section class="span12">
 		<h1>{{title}}</h1>
-		<h2>At: {{at}}</h2>
-		<h2 ng-show="client">Client: {{client}}</h2>
-		<h2>What:</h2>
-		<h2 ng-repeat="w in what">{{w}}</h2>
 		<p>{{info}}</p>
 		<a href="#/home">Go Back</a>
 	</section>
 </div>
+
+<div class="row-fluid">
+	<article class="span12">
+		<dl class="dl-horizontal">
+			<dt><h4>At:</h4></dt>
+			<dd><h4>{{at}}</h4></dd>
+			<dt ng-show="client"><h4>Client:</h4></dt>
+			<dd ng-show="client"><h4>{{client}}</h4></dd>
+			<dt><h4>What:</h4></dt>
+			<dd><h4 ng-repeat="w in what">{{w}}</h4></dd>
+		</dl>
+	</article>
+</div>
+
 <div class="row-fluid">
 	<section class="span12">
 		<div class="span3" ng-repeat="img in imgs" ng-class="{'span-fourth': $index % 4 == 0, 'span-second': $index % 2 == 0}">

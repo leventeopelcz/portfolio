@@ -1,22 +1,26 @@
 <div class="row-fluid">
 	<section class="span12">
-		<h1>{{title}}</h1>
-		<p>{{info}}</p>
-		<a href="#/home">Go Back</a>
+		<div class="span7" style="border-right: 2px dotted rgb(213, 213, 213)">
+			<div style="margin-right:2.564102564102564%;">
+					<h1>{{title}}</h1>
+					<p>{{info}}</p>
+					<a href="#/home">Go Back</a>
+			</div>
+		</div>
+		<div class="span5">
+			<h1>Info</h1>
+			<dl class="dl-horizontal">
+				<dt><h4>At:</h4></dt>
+				<dd><h4>{{at}}</h4></dd>
+				<hr>
+				<dt ng-show="client"><h4>Client:</h4></dt>
+				<dd ng-show="client"><h4>{{client}}</h4></dd>
+				<hr ng-show="client">
+				<dt><h4>What:</h4></dt>
+				<dd><h4 ng-repeat="w in what">{{w}}</h4></dd>
+			</dl>
+		</div>
 	</section>
-</div>
-
-<div class="row-fluid">
-	<article class="span12">
-		<dl class="dl-horizontal">
-			<dt><h4>At:</h4></dt>
-			<dd><h4>{{at}}</h4></dd>
-			<dt ng-show="client"><h4>Client:</h4></dt>
-			<dd ng-show="client"><h4>{{client}}</h4></dd>
-			<dt><h4>What:</h4></dt>
-			<dd><h4 ng-repeat="w in what">{{w}}</h4></dd>
-		</dl>
-	</article>
 </div>
 
 <div class="row-fluid">

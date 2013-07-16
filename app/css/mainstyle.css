@@ -19,6 +19,15 @@ a.thumbnail {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+	
+	filter: grayscale(70%);
+	-webkit-filter: grayscale(70%);
+	-moz-filter: grayscale(70%);
+	-ms-filter: grayscale(70%);
+	-o-filter: grayscale(70%);
+	filter: url(#greyscale);
+	filter: gray;
+	-webkit-filter: grayscale(.7);
 }
 a.thumbnail:hover,
 a.thumbnail:focus {
@@ -27,6 +36,18 @@ a.thumbnail:focus {
   box-shadow: none;
 	background-color: #333;
 	color: #fff;
+	
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: url(#greyscale);
+	filter: gray;
+	-webkit-filter: grayscale(0);
+}
+.dl-horizontal {
+	margin: 0;
 }
 .dl-horizontal dt {
 	text-align: left;
@@ -34,6 +55,11 @@ a.thumbnail:focus {
 }
 .dl-horizontal dd {
 	margin-left: 120px;
+}
+hr {
+	margin: 15px 0 20px 0;
+	border-top: none;
+	border-bottom: 2px dotted rgb(213, 213, 213);
 }
 
 /* Typography */

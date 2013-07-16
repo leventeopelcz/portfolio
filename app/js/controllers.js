@@ -57,10 +57,15 @@ angular.module('myApp.controllers', [])
 		var j = 0;
 		for (var i = 0; i < $rootScope.projects.length; i++) {
 			if (typeof($rootScope.projects[i].imgdir) != 'undefined') {
-				$http.get('php/test.php?imgdir=' + $rootScope.projects[i].imgdir).success(function(data) {
+				$http.get('php/test.php?imgdir=' + $rootScope.projects[i].imgdir)
+				.success(function(data) {
 					// because of the promise, the loop variable i is undefined here, doesn't make sense. So we need an other separate variable to keep track of indexes!
 					$rootScope.projects[j].imgs = data;
 					j++;
+				})
+				.error(function(data, status, header, config) {
+					console.error(data);
+					//return status;
 				});
 			}
 		}
@@ -68,7 +73,6 @@ angular.module('myApp.controllers', [])
 	}])
 	
   .controller('project_ctrl', ['$scope', '$rootScope', '$routeParams', function($scope, $rootScope, $routeParams) {
-		
 		$scope.title 	= $rootScope.projects[$routeParams.projectId - 1].title;
 		$scope.at 		= $rootScope.projects[$routeParams.projectId - 1].at;
 		$scope.what 	= $rootScope.projects[$routeParams.projectId - 1].what;

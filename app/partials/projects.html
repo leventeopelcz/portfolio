@@ -1,8 +1,10 @@
-<div class="span3 project" ng-repeat="project in projects" ng-class="{'span-fourth': $index % 4 == 0, 'span-second': $index % 2 == 0}" ng-controller="projects_ctrl">
+<div class="span3" ng-repeat="project in projects" ng-class="{'span-fourth': $index % 4 == 0, 'span-second': $index % 2 == 0}" ng-controller="projects_ctrl">
 	<a href="#/project/{{$index + 1}}" class="thumbnail">
 		<img src="img/{{project.imgdir}}/{{project.imgs[0]}}" alt="{{project.title}} - {{project.imgs[0]}}">
 		<h3>{{project.title}}</h3>
-		<p ng-show="project.at">At: <strong>{{project.at}}</strong></p>
-		<p ng-show="project.client">Client: <strong>{{project.client}}</strong></p>
+		<ul>
+			<li ng-show="project.at"><p>At: <strong>{{project.at}}</strong></p></li>
+			<li ng-show="project.client"><p>Client: <strong>{{project.client}}</strong></p></li>
+		</ul>
 	</a>
 </div>

@@ -7,11 +7,15 @@ body {
 	line-height: 1.8em;
 	background: url(../img/noise.png) #f3f3f3;
 }
+.thumbnailmatrix {
+	margin-top: 20px;
+}
 a.thumbnail {
 	line-height: inherit;
 	text-decoration: none;
 	color: #333;
-	padding: 5px;
+	padding: 0;
+	margin-top: 30px;
 	border: none;
 	-webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -19,15 +23,13 @@ a.thumbnail {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+	background-color: #fff;
 	
-	filter: grayscale(70%);
-	-webkit-filter: grayscale(70%);
-	-moz-filter: grayscale(70%);
-	-ms-filter: grayscale(70%);
-	-o-filter: grayscale(70%);
-	filter: url(#greyscale);
-	filter: gray;
-	-webkit-filter: grayscale(.7);
+	-webkit-transition: background-color 0.5s ease-in-out, color 0.2s ease-in-out;
+  -moz-transition: 		background-color 0.5s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: 		background-color 0.5s ease-in-out, color 0.2s ease-in-out;
+  -o-transition: 			background-color 0.5s ease-in-out, color 0.2s ease-in-out;
+  transition: 				background-color 0.5s ease-in-out, color 0.2s ease-in-out;
 }
 a.thumbnail:hover,
 a.thumbnail:focus {
@@ -37,14 +39,13 @@ a.thumbnail:focus {
 	background-color: #333;
 	color: #fff;
 	
-	filter: grayscale(0%);
-	-webkit-filter: grayscale(0%);
-	-moz-filter: grayscale(0%);
-	-ms-filter: grayscale(0%);
-	-o-filter: grayscale(0%);
-	filter: url(#greyscale);
-	filter: gray;
-	-webkit-filter: grayscale(0);
+	filter: 				grayscale(60%);
+	-webkit-filter: grayscale(60%);
+	-moz-filter: 		grayscale(60%);
+	-ms-filter: 		grayscale(60%);
+	-o-filter: 			grayscale(60%);
+	filter: 				gray;
+	-webkit-filter: grayscale(.6);
 }
 .dl-horizontal {
 	margin: 0;
@@ -138,14 +139,17 @@ article:after {
 
 /* Projects */
 
-.projects {
-	margin-top: 20px;
+.thumbnail ul {
+	list-style: none;
+	margin: 0 10px 10px 10px;
+	display: inline-block;
 }
-.projects p {
+.thumbnail p {
 	margin: 0;
+	line-height: 1.6em;
 }
-.project {
-	margin-top: 30px;
+.thumbnail h3 {
+	margin: 10px 10px 0 10px;
 }
 
 /* Map */
@@ -182,9 +186,9 @@ article:after {
 	margin-left: -20px;
 	position: absolute;
 	left: 50%;
-	-webkit-border-radius: 50%;
-	   -moz-border-radius: 50%;
-	        border-radius: 50%;
+	-webkit-border-radius: 	50%;
+	-moz-border-radius: 		50%;
+	border-radius: 					50%;
 }
 .map-dot-bottom {
 	bottom: -20px;

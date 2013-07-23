@@ -67,10 +67,10 @@ angular.module('myApp.services', [])
 							$http.get('php/test.php?imgdir=' + $rootScope.projects[i].imgdir)
 							.success(function(data) {
 								$rootScope.projects[i].imgs = data;
-								//only return after the last iteration
-								if(i === $rootScope.projects.length - 1) {
+								//only return after the last iteration < wont work reliably, WHY?
+								//if(i === $rootScope.projects.length - 1) {
 									callback($rootScope.projects);
-								}
+								//}
 							})
 							.error(function(data, status, header, config) {
 								console.error(data);

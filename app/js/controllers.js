@@ -9,7 +9,7 @@ angular.module('myApp.controllers', [])
 	}])
 	
   .controller('project_ctrl', ['$scope', '$routeParams', 'Projects', function($scope, $routeParams, Projects) {
-		Projects.getProjects(function(data){
+		Projects.getProjects(function(data) {
 			var projects = data;
 			$scope.title 	= projects[$routeParams.projectId - 1].title;
 			$scope.at 		= projects[$routeParams.projectId - 1].at;
@@ -18,6 +18,9 @@ angular.module('myApp.controllers', [])
 			$scope.info 	= projects[$routeParams.projectId - 1].info;
 			$scope.imgdir	= projects[$routeParams.projectId - 1].imgdir;
 			$scope.imgs		= projects[$routeParams.projectId - 1].imgs;
+			$(".fancybox").fancybox({
+				padding: [0,0,0,0]
+			});
 		});
   }])
 	

@@ -64,7 +64,7 @@ angular.module('myApp.services', [])
 				
 				// count how many projects we have received
 				var cb = function() {
-					if (++counter == num_projects) {
+					if (++counter == num_projects && !!callback) {
 						callback($rootScope.projects);
 					}
 				}

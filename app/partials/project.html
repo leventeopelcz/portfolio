@@ -26,7 +26,7 @@
 <div class="row-fluid">
 	<section class="span12 thumbnailmatrix">
 		<div class="span3" ng-repeat="img in imgs" ng-class="{'span-fourth': $index % 4 == 0, 'span-second': $index % 2 == 0}">
-			<a href="img/{{imgdir}}/{{img}}" class="thumbnail fancybox" rel="group"><img src="img/{{imgdir}}/{{img}}" alt="{{imgdir}} - {{img}}"></a>
+			<a href="img/{{imgdir}}/{{img}}" class="thumbnail fancybox" rel="group"><img ng-src="img/{{imgdir}}/{{img}}" alt="{{imgdir}} - {{img}}"></a>
 		</div>
 	</section>
 </div>

@@ -82,7 +82,7 @@ angular.module('myApp.services', [])
 				for (var i = 0; i < num_projects; i++) {
 					(function(proj_idx) {
 						if (typeof($rootScope.projects[proj_idx].imgdir) != 'undefined') {
-							$http.get('php/test.php?imgdir=' + $rootScope.projects[proj_idx].imgdir)
+							$http.get('php/getProjectImages.php?imgdir=' + $rootScope.projects[proj_idx].imgdir)
 							.success(function(data) {
 								$rootScope.projects[proj_idx].imgs = data;
 								cb();

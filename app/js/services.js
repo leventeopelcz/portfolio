@@ -57,15 +57,24 @@ angular.module('myApp.services', [])
 		];
 		
 		//return projects only after we got the images
+		var run = false;
 		return {
 			getProjects : function(callback) {
+				if(run && !!callback) {
+					callback($rootScope.projects);
+					return;
+				}
+				
 				var counter = 0;
 				var num_projects = $rootScope.projects.length;
 				
 				// count how many projects we have received
 				var cb = function() {
-					if (++counter == num_projects && !!callback) {
-						callback($rootScope.projects);
+					if (++counter == num_projects) {
+						run = true;
+						if (!!callback) {
+							callback($rootScope.projects);
+						}
 					}
 				}
 				

@@ -57,15 +57,38 @@ angular.module('myApp.services', [])
 		];
 		
 		//return projects only after we got the images
+		var run = false;
 		return {
+			
 			getProjects : function(callback) {
+				
+				console.log("-----call start: " + new Date().getTime() / 1000);
+				
+				if(run && !!callback) {
+					console.log("-----call end: " + new Date().getTime() / 1000);
+					console.log('scrollr callback');
+					callback($rootScope.projects);
+					callback($rootScope.scrollr);
+					return;
+				}
+				
 				var counter = 0;
 				var num_projects = $rootScope.projects.length;
 				
 				// count how many projects we have received
 				var cb = function() {
 					if (++counter == num_projects) {
-						callback($rootScope.projects);
+						run = true;
+						if (!!callback) {
+							console.log("-----call end: " + new Date().getTime() / 1000);
+							console.log('scrollr init');
+							$rootScope.scrollr = skrollr.init({
+								forceHeight: false
+							});
+							console.log('scrollr init callback');
+							callback($rootScope.scrollr);
+							callback($rootScope.projects);
+						}
 					}
 				}
 				
@@ -73,13 +96,13 @@ angular.module('myApp.services', [])
 				for (var i = 0; i < num_projects; i++) {
 					(function(proj_idx) {
 						if (typeof($rootScope.projects[proj_idx].imgdir) != 'undefined') {
-							$http.get('php/test.php?imgdir=' + $rootScope.projects[proj_idx].imgdir)
+							$http.get('php/getProjectImages.php?imgdir=' + $rootScope.projects[proj_idx].imgdir)
 							.success(function(data) {
 								$rootScope.projects[proj_idx].imgs = data;
 								cb();
 							})
 							.error(function(data, status, header, config) {
-								console.error(data);
+								//console.error(data);
 							});
 						}
 					})(i);

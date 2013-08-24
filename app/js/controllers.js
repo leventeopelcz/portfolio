@@ -4,14 +4,12 @@
 
 angular.module('myApp.controllers', [])
 
-  .controller('home_ctrl', ['Projects', '$timeout', function(Projects, $timeout) {
+  .controller('home_ctrl', ['Projects', '$timeout', '$rootScope', function(Projects, $timeout, $rootScope) {
 		Projects.getProjects(function() {
 			$timeout(function() {
-				console.log('scrollr init');
-				skrollr.init({
-					forceHeight: false
-				});
-		}, 500);
+				console.log('scrollr refresh');
+				$rootScope.scrollr.refresh();
+			}, 0);
 		});
 	}])
 	

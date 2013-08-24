@@ -59,9 +59,16 @@ angular.module('myApp.services', [])
 		//return projects only after we got the images
 		var run = false;
 		return {
+			
 			getProjects : function(callback) {
+				
+				console.log("-----call start: " + new Date().getTime() / 1000);
+				
 				if(run && !!callback) {
+					console.log("-----call end: " + new Date().getTime() / 1000);
+					console.log('scrollr callback');
 					callback($rootScope.projects);
+					callback($rootScope.scrollr);
 					return;
 				}
 				
@@ -73,6 +80,13 @@ angular.module('myApp.services', [])
 					if (++counter == num_projects) {
 						run = true;
 						if (!!callback) {
+							console.log("-----call end: " + new Date().getTime() / 1000);
+							console.log('scrollr init');
+							$rootScope.scrollr = skrollr.init({
+								forceHeight: false
+							});
+							console.log('scrollr init callback');
+							callback($rootScope.scrollr);
 							callback($rootScope.projects);
 						}
 					}
@@ -88,7 +102,7 @@ angular.module('myApp.services', [])
 								cb();
 							})
 							.error(function(data, status, header, config) {
-								console.error(data);
+								//console.error(data);
 							});
 						}
 					})(i);

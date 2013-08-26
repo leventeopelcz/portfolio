@@ -128,7 +128,8 @@ ul.unstyled {
 	background-color: #fff;
 }
 
-.header-link.linkedin {
+.header-link.linkedin,
+.header-link.cv-file {
 	margin-bottom: 10px;
 }
 

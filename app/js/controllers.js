@@ -5,6 +5,8 @@
 angular.module('myApp.controllers', [])
 
   .controller('home_ctrl', ['Projects', '$timeout', '$rootScope', function(Projects, $timeout, $rootScope) {
+		 $("[data-toggle='tooltip']").tooltip();
+		 
 		Projects.getProjects(function() {
 			$timeout(function() {
 				console.log('scrollr refresh');

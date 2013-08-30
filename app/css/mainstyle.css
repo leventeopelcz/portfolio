@@ -63,6 +63,34 @@ hr {
 	border-bottom: 2px dotted rgb(213, 213, 213);
 }
 
+.dropdown {
+	display: inline-block;
+}
+.dropdown-menu {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	background-color: #333;
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.dropdown-menu > li > a {
+	color: #fff;
+	padding: 10px 20px;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  background-color: #666;
+  background-image: none;
+}
+
 /* Typography */
 
 h1, h2, h3, blockquote {
@@ -207,6 +235,7 @@ article:after {
 	display: inline-block;
 	background-color: #333;
 	font-size: 1.2em;
+	cursor: pointer;
 	
 	-webkit-transition: background-color 0.5s ease-in-out, color 0.2s ease-in-out;
   -moz-transition: 		background-color 0.5s ease-in-out, color 0.2s ease-in-out;

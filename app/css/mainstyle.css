@@ -228,14 +228,28 @@ article:after {
 	padding-top: 100%;
 }
 
-.btn-back {
+/* Project Navbar */
+
+.nav {
+  margin: 0;
+  padding-top: 10px;
+}
+.nav-pills > li {
+  margin-right: 5px;
+}
+.nav-pills > li > a {
 	color: #fff;
 	font-family: 'Signika', sans-serif;
 	padding: 10px 20px;
-	display: inline-block;
 	background-color: #333;
 	font-size: 1.2em;
 	cursor: pointer;
+  margin: 0;
+  line-height: normal;
+  
+  -webkit-border-radius: 	0;
+  -moz-border-radius: 		0;
+  border-radius: 					0;
 	
 	-webkit-transition: background-color 0.5s ease-in-out, color 0.2s ease-in-out;
   -moz-transition: 		background-color 0.5s ease-in-out, color 0.2s ease-in-out;
@@ -243,15 +257,31 @@ article:after {
   -o-transition: 			background-color 0.5s ease-in-out, color 0.2s ease-in-out;
   transition: 				background-color 0.5s ease-in-out, color 0.2s ease-in-out;
 }
-.btn-back:hover,
-.btn-back:focus {
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus {
 	color: #333;
-	text-decoration: none;
-	background-color: #fff;
+  background-color: #fff;
 }
-.btn-back i {
+.nav-pills .open .dropdown-toggle {
+	color: #333;
+  background-color: #fff;
+}
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills > .active > a:focus {
+  color: #333;
+  background-color: #fff;
+}
+.nav-pills > li > a > i {
 	margin-right: 10px;
 }
+.nav-pills .dropdown-menu {
+	-webkit-border-radius: 	0;
+	-moz-border-radius: 		0;
+	border-radius: 					0;
+}
+
+/* Tooltips */
 
 .tooltip-inner {
 	background-color: #333;

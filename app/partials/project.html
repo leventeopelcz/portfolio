@@ -4,24 +4,22 @@
 			<div style="margin-right:2.564102564102564%;">
 				<h1>{{title}}</h1>
 				<p>{{info}}</p>
-				<a class="btn-back" href="#/home"><i class="icon-angle-left"></i> back</a>
 				
-				<div class="dropdown">
-					<a class="dropdown-toggle btn-back" data-toggle="dropdown"><i class="icon-angle-down"></i> case studies</a>
-					<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-						<li><a tabindex="-1" href="#">read the blog</a></li>
-						<li><a tabindex="-1" href="#">watch the video</a></li>
-					</ul>
-				</div>
-				
-				<div class="dropdown">
-					<a class="dropdown-toggle btn-back" data-toggle="dropdown"><i class="icon-angle-down"></i> download the game</a>
-					<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-						<li><a tabindex="-1" href="#">for Windows</a></li>
-						<li><a tabindex="-1" href="#">for Mac</a></li>
-					</ul>
-				</div>
-				
+        <ul class="nav nav-pills">
+        	<li>
+          	<a href="#/home"><i class="icon-angle-left"></i> back</a>
+          </li>
+          <li ng-repeat="dropdown in dropdowns" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown"><i class="icon-angle-down"></i> {{dropdown.title}}</a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li ng-repeat="link in dropdown.links"><a tabindex="-1" ng-href="{{link.url}}" target="_blank">{{link.title}}</a></li>
+            </ul>
+          </li>
+          <li>
+          	<a ng-repeat="link in links" ng-href="{{link.url}}" target="_blank"><i class="icon-angle-right"></i> {{link.title}}</a>
+          </li>
+        </ul>
+        
 			</div>
 		</div>
 		<div class="span5">

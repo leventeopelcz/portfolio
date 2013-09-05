@@ -25,6 +25,9 @@ angular.module('myApp.controllers', [])
 			$scope.imgdir	= $rootScope.projects[$routeParams.projectId - 1].imgdir;
 			$scope.imgs		= $rootScope.projects[$routeParams.projectId - 1].imgs;
 			
+			$scope.dropdowns 	= $rootScope.projects[$routeParams.projectId - 1].dropdowns;
+			$scope.links 			= $rootScope.projects[$routeParams.projectId - 1].links;
+			
 			$(".fancybox").fancybox({
 				padding: [0,0,0,0]
 			});

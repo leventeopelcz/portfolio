@@ -22,11 +22,13 @@ angular.module('myApp.services', [])
 						links: [
 							{
 								title: 'read the blog',
-								url: 'http://community.vfs.com/oomph/2011/10/game-design-yeah-digital-design-students-can-do-that/'
+								url: 'http://community.vfs.com/oomph/2011/10/game-design-yeah-digital-design-students-can-do-that/',
+								target: '_blank'
 							},
 							{
 								title: 'watch the video',
-								url: 'http://vimeo.com/32888874'
+								url: 'http://vimeo.com/32888874',
+								target: '_blank'
 							}
 						]
 					},
@@ -81,7 +83,8 @@ angular.module('myApp.services', [])
 				links: [
 					{
 						title: 'check it out',
-						url: 'http://www.cbc.ca/news/interactives/sodium-calculator/index.html'
+						url: 'http://www.cbc.ca/news/interactives/sodium-calculator/index.html',
+						target: '_blank'
 					}
 				]
 			},
@@ -102,7 +105,8 @@ angular.module('myApp.services', [])
 				links: [
 					{
 						title: 'check it out',
-						url: 'http://ayogo.com/'
+						url: 'http://ayogo.com/',
+						target: '_blank'
 					}
 				]
 			}

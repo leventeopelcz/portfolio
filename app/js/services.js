@@ -18,7 +18,7 @@ angular.module('myApp.services', [])
 				imgdir:	'brothers-tale',
 				dropdowns: [
 					{
-						title: 'case studies',
+						title: 'look at case studies',
 						links: [
 							{
 								title: 'read the blog',

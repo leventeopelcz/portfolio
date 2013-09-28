@@ -31,5 +31,7 @@ angular.module('myApp.controllers', [])
 			$(".fancybox").fancybox({
 				padding: [0,0,0,0]
 			});
+			
+			$("[data-toggle='tooltip']").tooltip();
 		});
   }]);

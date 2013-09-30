@@ -6,7 +6,7 @@
 // Demonstrate how to register services
 // In this case it is a simple value service.
 angular.module('myApp.services', [])
-	.service('Projects', function($rootScope, $http) {
+	.service('Projects', function($rootScope, $http, $timeout) {
 		
 		//projects
 		$rootScope.projects = [
@@ -123,8 +123,11 @@ angular.module('myApp.services', [])
 				if(run && !!callback) {
 					console.log("-----call end: " + new Date().getTime() / 1000);
 					console.log('scrollr callback');
+					$timeout(function() {
+						console.log('scrollr refresh');
+						$rootScope.scrollr.refresh();
+					}, 0);
 					callback($rootScope.projects);
-					callback($rootScope.scrollr);
 					return;
 				}
 				
@@ -142,7 +145,6 @@ angular.module('myApp.services', [])
 								forceHeight: false
 							});
 							console.log('scrollr init callback');
-							callback($rootScope.scrollr);
 							callback($rootScope.projects);
 						}
 					}

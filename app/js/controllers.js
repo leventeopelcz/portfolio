@@ -4,9 +4,70 @@
 
 angular.module('myApp.controllers', [])
 
-  .controller('home_ctrl', ['Projects', '$timeout', '$rootScope', function(Projects, $timeout, $rootScope) {
+  .controller('home_ctrl', ['Projects', '$timeout', '$rootScope', '$scope', function(Projects, $timeout, $rootScope, $scope) {
 		$("[data-toggle='tooltip']").tooltip();
-		Projects.getProjects(function() {});
+		Projects.getProjects(function() {
+			//initialise spinner
+			var opts = {
+				lines: 5, // The number of lines to draw
+				length: 12, // The length of each line
+				width: 5, // The line thickness
+				radius: 16, // The radius of the inner circle
+				corners: 0, // Corner roundness (0..1)
+				rotate: 0, // The rotation offset
+				direction: 1, // 1: clockwise, -1: counterclockwise
+				color: '#49adf6', // #rgb or #rrggbb or array of colors
+				speed: 1, // Rounds per second
+				trail: 68, // Afterglow percentage
+				shadow: false, // Whether to render a shadow
+				hwaccel: true, // Whether to use hardware acceleration
+				className: 'spinner', // The CSS class to assign to the spinner
+				zIndex: 2e9, // The z-index (defaults to 2000000000)
+				top: 'auto', // Top position relative to parent in px
+				left: 'auto' // Left position relative to parent in px
+			};
+			var targets = $('.image-placeholder');
+			var spinners = [];
+			for(var i = 0; i < targets.length; i++) {
+				spinners[i] = new Spinner(opts).spin(targets[i]);
+			}
+			
+			function PreloadImage(imgSrc, callback, thumbs, spinners, idx){
+				var objImagePreloader = new Image();
+			
+				objImagePreloader.src = imgSrc;
+				if(objImagePreloader.complete){
+					callback(thumbs, spinners, idx);
+					objImagePreloader.onload=function(){};
+				}
+				else{
+					objImagePreloader.onload = function() {
+						callback(thumbs, spinners, idx);
+						//    clear onLoad, IE behaves irratically with animated gifs otherwise
+						objImagePreloader.onload=function(){};
+					}
+				}
+			}
+			
+			$scope.thumbsLoading = [];
+			
+			var imgcallback = function(thumbs, spinners, idx) {
+				spinners[idx].stop();
+				thumbs[idx] = false;
+				$scope.$apply();
+				console.log('finished loading... ' + idx);
+				console.log(thumbs);
+			};
+			
+			for(var i = 0; i < $rootScope.projects.length; i++) {
+				var img = 'img/' + $rootScope.projects[i].imgdir + '/' + 	$rootScope.projects[i].imgs[0];
+				console.log('started loading... ' + i);
+				$scope.thumbsLoading[i] = true;
+				console.log($scope.thumbsLoading);
+				PreloadImage(img, imgcallback, $scope.thumbsLoading, spinners, i);
+			}
+			
+		});
 	}])
 	
   .controller('project_ctrl', ['$scope', '$routeParams', 'Projects', '$rootScope', function($scope, $routeParams, Projects, $rootScope) {

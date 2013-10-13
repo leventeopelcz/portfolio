@@ -4,7 +4,7 @@
     	<div class="span3" ng-repeat="project in projects" ng-class="{'span-fourth': $index % 4 == 0, 'span-second': $index % 2 == 0}">
         <a href="#/project/{{$index + 1}}" class="thumbnail">
         	<div class="image-placeholder">
-          	<img ng-src="img/{{project.imgdir}}/{{project.imgs[0]}}" alt="{{project.title}} - {{project.imgs[0]}}">
+          	<img ng-hide="thumbsLoading[$index]" ng-src="img/{{project.imgdir}}/{{project.imgs[0]}}" alt="{{project.title}} - {{project.imgs[0]}}">
           </div>
           <h3>{{project.title}}</h3>
         </a>

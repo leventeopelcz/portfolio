@@ -1,10 +1,10 @@
 <div class="row-fluid">
 	<section class="span12 thumbnailmatrix">
 		<div class="row-fluid">
-    	<div class="span3" ng-repeat="project in projects" ng-class="{'span-fourth': $index % 4 == 0, 'span-second': $index % 2 == 0}">
+    	<div class="span3" ng-repeat="project in projects" ng-class="{'span-fourth': $index % 4 == 0, 'span-second': $index % 2 == 0}" ng-controller="projects_ctrl">
         <a href="#/project/{{$index + 1}}" class="thumbnail">
-        	<div class="image-placeholder">
-          	<img ng-hide="thumbsLoading[$index]" ng-src="img/{{project.imgdir}}/{{project.imgs[0]}}" alt="{{project.title}} - {{project.imgs[0]}}">
+        	<div class="image-placeholder" spinner>
+          	<img ng-hide="imageLoading" ng-src="img/{{project.imgdir}}/{{project.imgs[0]}}" alt="{{project.title}} - {{project.imgs[0]}}">
           </div>
           <h3>{{project.title}}</h3>
         </a>
@@ -27,11 +27,7 @@
     <div class="row-fluid">
       <div class="span12 text-center">
         <h2 data-center-top="background-color:rgba(0,0,0,0); color:rgba(255,255,255,0);" data-center-bottom="background-color:rgba(51,51,51,1); color:rgba(255,255,255,1);">
-            And you keep going. You want to know what lies ahead...
-        </h2>
-        <br>
-        <h2 data-center-top="background-color:rgba(0,0,0,0); color:rgba(255,255,255,0);" data-center-bottom="background-color:rgba(51,51,51,1); color:rgba(255,255,255,1);">
-            But which way to take? You think for a moment.
+            Keep scrolling...
         </h2>
       </div>
     </div>
@@ -51,11 +47,7 @@
       </div>
       <div class="span5 offset2 text-center">
         <h2 data-center-top="background-color:rgba(0,0,0,0); color:rgba(255,255,255,0);" data-center-bottom="background-color:rgba(51,51,51,1); color:rgba(255,255,255,1);">
-          You found a strange mask.
-        </h2>
-        <br>
-        <h2 data-center-top="background-color:rgba(0,0,0,0); color:rgba(255,255,255,0);" data-center-bottom="background-color:rgba(51,51,51,1); color:rgba(255,255,255,1);">
-          You try it on, and your life is never gonna be the same...
+          Oh Sh%&#@t!
         </h2>
       </div>
     </div>
@@ -63,7 +55,24 @@
     <div class="row-fluid">
       <div class="span12 text-center">
         <h2 data-center-top="background-color:rgba(0,0,0,0); color:rgba(255,255,255,0);" data-center-bottom="background-color:rgba(51,51,51,1); color:rgba(255,255,255,1);">
-          Then you found me, adventurer!
+          A little bit more...
+        </h2>
+      </div>
+    </div>
+		
+		 <div class="row-fluid">
+      <div class="span12 bottom-dot top-dot mr3">
+        <span class="map-route mr3" data-center-top="height:0px;" data-center-bottom="height:550px;">
+          <i class="map-dot-top" data-center-top="width:0px; height:0px; margin-left:0px;" data-center-bottom="width:40px; height:40px; margin-left:-20px;"></i>
+          <i class="map-dot-bottom" data-center-top="width:0px; height:0px; margin-left:0px;" data-center-bottom="width:40px; height:40px; margin-left:-20px;"></i>
+        </span>
+      </div>
+    </div>
+		
+		<div class="row-fluid">
+      <div class="span12 text-center">
+        <h2 data-center-top="background-color:rgba(0,0,0,0); color:rgba(255,255,255,0);" data-center-bottom="background-color:rgba(51,51,51,1); color:rgba(255,255,255,1);">
+          Almost there...
         </h2>
       </div>
     </div>

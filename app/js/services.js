@@ -118,13 +118,8 @@ angular.module('myApp.services', [])
 			
 			getProjects : function(callback) {
 				
-				console.log("-----call start: " + new Date().getTime() / 1000);
-				
 				if(run && !!callback) {
-					console.log("-----call end: " + new Date().getTime() / 1000);
-					console.log('scrollr callback');
 					$timeout(function() {
-						console.log('scrollr refresh');
 						$rootScope.scrollr.refresh();
 					}, 0);
 					callback($rootScope.projects);
@@ -139,12 +134,9 @@ angular.module('myApp.services', [])
 					if (++counter == num_projects) {
 						run = true;
 						if (!!callback) {
-							console.log("-----call end: " + new Date().getTime() / 1000);
-							console.log('scrollr init');
 							$rootScope.scrollr = skrollr.init({
 								forceHeight: false
 							});
-							console.log('scrollr init callback');
 							callback($rootScope.projects);
 						}
 					}
@@ -168,5 +160,29 @@ angular.module('myApp.services', [])
 					
 			}
 		};
+		
+	})
+	
+	.service('Images', function() {
+		
+		return {
+			preload : function (imgSrc, callback){
+				var objImagePreloader = new Image();
+			
+				objImagePreloader.src = imgSrc;
+				if(objImagePreloader.complete){
+					callback();
+					objImagePreloader.onload=function(){};
+				}
+				else{
+					objImagePreloader.onload = function() {
+						callback();
+						//clear onLoad, IE behaves irratically with animated gifs otherwise
+						objImagePreloader.onload=function(){};
+					}
+				}
+			}
+				
+		}
 		
 	});

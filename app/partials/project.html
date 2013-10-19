@@ -40,10 +40,10 @@
 
 <div class="row-fluid">
 	<section class="span12 thumbnailmatrix">
-		<div class="span3" ng-repeat="img in imgs" ng-class="{'span-fourth': $index % 4 == 0, 'span-second': $index % 2 == 0}">
+		<div class="span3" ng-repeat="img in imgs" ng-class="{'span-fourth': $index % 4 == 0, 'span-second': $index % 2 == 0}" ng-controller="project_thumbs_ctrl">
 			<a href="img/{{imgdir}}/{{img}}" class="thumbnail fancybox" rel="group">
-				<div class="image-placeholder">
-					<img ng-hide="imgsLoading[$index]" ng-src="img/{{imgdir}}/{{img}}" alt="{{imgdir}} - {{img}}">
+				<div class="image-placeholder" spinner>
+					<img ng-hide="imageLoading" ng-src="img/{{imgdir}}/{{img}}" alt="{{imgdir}} - {{img}}">
 				</div>
 			</a>
 		</div>

@@ -12,8 +12,11 @@ angular.module('myApp.services', [])
 //---------------------------------------------
 
 .service('Projects', function($http) {
+	var httpConfig = {
+  	cache: true
+	}; 
 	this.get = function(callback) {
-		$http.get('projects.json').then(function(response) {
+		$http.get('projects.json', httpConfig).then(function(response) {
 			callback(response.data);
 		});
 	}
@@ -24,8 +27,11 @@ angular.module('myApp.services', [])
 //---------------------------------------------
 
 .service('ProjectImages', function($http) {
+	var httpConfig = {
+  	cache: true
+	};
 	this.get = function(imgdir, callback) {
-		$http.get('php/getProjectImages.php?imgdir=' + imgdir).then(function(response) {
+		$http.get('php/getProjectImages.php?imgdir=' + imgdir, httpConfig).then(function(response) {
 			callback(response.data);
 		});
 	}
@@ -51,7 +57,5 @@ angular.module('myApp.services', [])
 				}
 			}
 		}
-			
 	}
-	
 });

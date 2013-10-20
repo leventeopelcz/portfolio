@@ -14,7 +14,7 @@
             "Animating",
             "C#"
         ],
-        "info": "Ages ago, Death wanted to retire. However, in order to do that, he had to kill every living creature. In an ancient race of people, four brothers became heroes who fought Death. They harnessed the power of the elements — earth, air, fire and water — by each wearing a magical mask imbued with these powers. They fought valiantly and, ultimately, denied Death in his bid to destroy mankind. Yet they sacrificed their lives in the process to save the people they loved. And they left behind a fifth brother — a little boy — who had been too young to fight. Now, he is a man embarking on a quest to kill Death and avenge the demise of his brothers.",
+        "info": "Ages ago, Death wanted to retire. However, in order to do that, he had to kill every living creature. In an ancient race of people, four brothers became heroes who fought Death. They harnessed the power of the elements â€” earth, air, fire and water â€” by each wearing a magical mask imbued with these powers. They fought valiantly and, ultimately, denied Death in his bid to destroy mankind. Yet they sacrificed their lives in the process to save the people they loved. And they left behind a fifth brother â€” a little boy â€” who had been too young to fight. Now, he is a man embarking on a quest to kill Death and avenge the demise of his brothers.",
         "imgdir": "brothers-tale",
         "dropdowns": [
             {
@@ -74,7 +74,7 @@
             "UX/UI",
             "AS3"
         ],
-        "info": "I got an assignment in University to create a soliter table game —not solitaire, the card game!— using Visual Studio. I loved the project so much that I decided to turn it into a Flash game. I turned my C# code into AS3 and created a cool, childish design for it. I wanted to make the game for kids to enhance their logic capacities. The goal of Zootaire is to reduce the number of stones —or in this case sheeps— all the way down to one by moving stones to the side of a neighboring stone, but only if there is an empty space. Movements can be made vertically or horizontally, not diagonally.",
+        "info": "I got an assignment in University to create a soliter table game â€”not solitaire, the card game!â€” using Visual Studio. I loved the project so much that I decided to turn it into a Flash game. I turned my C# code into AS3 and created a cool, childish design for it. I wanted to make the game for kids to enhance their logic capacities. The goal of Zootaire is to reduce the number of stones â€”or in this case sheepsâ€” all the way down to one by moving stones to the side of a neighboring stone, but only if there is an empty space. Movements can be made vertically or horizontally, not diagonally.",
         "imgdir": "zootaire",
         "links": [
             {

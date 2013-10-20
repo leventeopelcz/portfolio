@@ -19,7 +19,7 @@ angular.module('myApp.controllers', [])
 //----- HOME THUMBS CONTROLLER -----//
 //---------------------------------------------
 
-.controller('home_thumbs_ctrl', ['ProjectImages', 'Images', '$scope', function(ProjectImages, Images, $scope) {
+.controller('home_thumbs_ctrl', ['ProjectImages', 'Images', '$scope', '$rootScope', function(ProjectImages, Images, $scope, $rootScope) {
 	ProjectImages.get($scope.projects[$scope.$index].imgdir, function(response) {
 		$scope.projectImages = response;
 		$scope.imageLoading = true;
@@ -32,6 +32,15 @@ angular.module('myApp.controllers', [])
 			}
 		});
 	});
+	if($scope.$last) {
+		if(typeof $rootScope.skrollr === 'undefined') {
+			$rootScope.skrollr = skrollr.init({
+				forceHeight: false
+			});
+		} else {
+			$rootScope.skrollr.refresh();
+		}
+	}
 }])
 
 //---------------------------------------------

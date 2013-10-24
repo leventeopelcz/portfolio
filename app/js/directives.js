@@ -5,6 +5,16 @@
 
 angular.module('myApp.directives', [])
 
+.directive('dropdown', function() {
+	return	{
+		restrict: 'A',
+		link: function(scope, element, attrs) {
+			$(element).click(function() { $(this).next('.dropdown-menu').slideToggle(100); });
+		} 
+	}
+})
+
+
 //---------------------------------------------
 //----- NGTARGET -----//
 //---------------------------------------------
@@ -55,6 +65,9 @@ angular.module('myApp.directives', [])
 			// stop the pinner (from controller)
 			scope.stopSpinner = function() {
 				spinner.stop();
+				$(element.parent().parent()).css('-webkit-transition', 'all .5s ease-in-out');
+				$(element.parent().parent()).css('-webkit-transform', 'scale(.8)');
+				$(element).children('img').fadeIn(600);
 			};
 		}
 	}

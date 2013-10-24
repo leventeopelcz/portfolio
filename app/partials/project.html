@@ -10,7 +10,7 @@
           	<a href="#/home"><i class="icon-angle-left"></i> back</a>
           </li>
           <li ng-repeat="dropdown in dropdowns" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown"><i class="icon-angle-down"></i> {{dropdown.title}}</a>
+            <a class="dropdown-toggle" data-toggle="dropdown" dropdown><i class="icon-angle-down"></i> {{dropdown.title}}</a>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
               <li ng-repeat="link in dropdown.links"><a tabindex="-1" ng-href="{{link.url}}" ng-target="{{link.target}}">{{link.title}} <i ng-show="link.target == '_blank'" class="icon-external-link"></i></a></li>
             </ul>

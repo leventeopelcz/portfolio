@@ -1,10 +1,60 @@
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+
+.columns {
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	-o-column-count: 1;
+	column-count: 1;
+}
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+	.col-md-12 {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.columns {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		-o-column-count: 2;
+		column-count: 2;
+		
+		-moz-column-gap: 50px;
+		-webkit-column-gap: 50px;
+		-o-column-gap: 50px;
+		column-gap: 50px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+	.columns {
+		-moz-column-count: 3;
+		-webkit-column-count: 3;
+		-o-column-count: 3;
+		column-count: 3;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+	.columns {
+		-moz-column-count: 4;
+		-webkit-column-count: 4;
+		-o-column-count: 4;
+		column-count: 4;
+	}
+}
+
 
 /* Globals */
 
 body {
 	font-family: 'Arvo', serif;
-	font-size: 1em;
-	line-height: 1.8em;
 	background: url(../img/noise.png) #f3f3f3;
 }
 .thumbnailmatrix {
@@ -90,9 +140,7 @@ hr {
 	padding: 10px 20px;
 }
 .dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus,
-.dropdown-submenu:hover > a,
-.dropdown-submenu:focus > a {
+.dropdown-menu > li > a:focus{
   background-color: #666;
   background-image: none;
 }
@@ -101,8 +149,6 @@ hr {
 
 h1, h2, h3, blockquote {
 	font-family: 'Signika', sans-serif;
-	/*font-family: 'Cinzel Decorative', cursive;*/
-	line-height: 1.4em;
 }
 h1 {
 	margin-top: 0;
@@ -134,7 +180,7 @@ header img {
 	height: 80px;
 }
 
-ul.unstyled {
+.list-unstyled {
 	display: inline-block;
 	margin: 0 0 0 5px;
 	vertical-align: middle;

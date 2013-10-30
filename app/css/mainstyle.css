@@ -30,6 +30,12 @@ a.thumbnail {
   -ms-transition: 		background-color 0.5s ease-in-out, color 0.2s ease-in-out;
   -o-transition: 			background-color 0.5s ease-in-out, color 0.2s ease-in-out;
   transition: 				background-color 0.5s ease-in-out, color 0.2s ease-in-out;
+	
+	-webkit-transform:	scale(.8, .8);
+  -moz-transform:			scale(.8, .8);
+  -ms-transform:			scale(.8, .8);
+  -o-transform:				scale(.8, .8);
+  transform:					scale(.8, .8);
 }
 a.thumbnail:hover,
 a.thumbnail:focus {

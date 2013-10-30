@@ -39,7 +39,7 @@ angular.module('myApp.directives', [])
 		restrict: 'A',
 		link: function(scope, element, attrs) {
 			
-			//initialise spinner parameters
+			// initialise spinner parameters
 			var opts = {
 				lines: 5, // The number of lines to draw
 				length: 0, // The length of each line
@@ -65,9 +65,9 @@ angular.module('myApp.directives', [])
 			// stop the pinner (from controller)
 			scope.stopSpinner = function() {
 				spinner.stop();
-				$(element.parent().parent()).css('-webkit-transition', 'all .5s ease-in-out');
-				$(element.parent().parent()).css('-webkit-transform', 'scale(.8)');
-				$(element).children('img').fadeIn(600);
+				$(element).css('-webkit-transition', 'all .5s ease-in-out');
+				$(element).css('-webkit-transform', 'scale(1, 1)');
+				$(element).find('img').fadeIn(600);
 			};
 		}
 	}

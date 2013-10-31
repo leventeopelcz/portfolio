@@ -8,13 +8,13 @@
 	column-count: 1;
 }
 
+.container {
+	max-width: 100%;
+}
+
 /* Small devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
-	.col-md-12 {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
 	.columns {
 		-moz-column-count: 2;
 		-webkit-column-count: 2;
@@ -57,11 +57,10 @@ body {
 	font-family: 'Arvo', serif;
 	background: url(../img/noise.png) #f3f3f3;
 }
-.thumbnailmatrix {
-	margin-top: 20px;
+.matrix {
+	padding-top: 20px;
 }
 a.thumbnail {
-	line-height: inherit;
 	text-decoration: none;
 	color: #333;
 	padding: 0;
@@ -70,10 +69,6 @@ a.thumbnail {
 	-webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-	background-color: #fff;
 	
 	-webkit-transition: background-color 0.5s ease-in-out, color 0.2s ease-in-out;
   -moz-transition: 		background-color 0.5s ease-in-out, color 0.2s ease-in-out;
@@ -89,9 +84,6 @@ a.thumbnail {
 }
 a.thumbnail:hover,
 a.thumbnail:focus {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
 	background-color: #333;
 	color: #fff;
 	
@@ -219,7 +211,7 @@ section, header {
 	padding-bottom: 50px;
 }
 header, section, footer {
-	margin-top: 50px;
+	padding-top: 50px;
 	position: relative;
 }
 article {
@@ -228,7 +220,7 @@ article {
 	position: relative;
 }
 footer {
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 /* Section Dividers */

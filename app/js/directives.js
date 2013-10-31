@@ -9,7 +9,12 @@ angular.module('myApp.directives', [])
 	return	{
 		restrict: 'A',
 		link: function(scope, element, attrs) {
-			$(element).click(function() { $(this).next('.dropdown-menu').slideToggle(100); });
+			$(element).on('show.bs.dropdown', function () {
+				element.find('.dropdown-menu').slideToggle(100);
+			});
+			$(element).on('hide.bs.dropdown', function () {
+				element.find('.dropdown-menu').slideToggle(100);
+			});
 		} 
 	}
 })
@@ -65,9 +70,9 @@ angular.module('myApp.directives', [])
 			// stop the pinner (from controller)
 			scope.stopSpinner = function() {
 				spinner.stop();
-				$(element).css('-webkit-transition', 'all .5s ease-in-out');
+				$(element).css('-webkit-transition', 'all .1s ease-in-out');
 				$(element).css('-webkit-transform', 'scale(1, 1)');
-				$(element).find('img').fadeIn(600);
+				$(element).find('img').fadeIn(400);
 			};
 		}
 	}

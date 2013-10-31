@@ -10,8 +10,8 @@
 						<li>
 							<a href="#/home"><i class="fa fa-angle-left"></i> back</a>
 						</li>
-						<li ng-repeat="dropdown in dropdowns" class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" dropdown><i class="fa fa-angle-down"></i> {{dropdown.title}}</a>
+						<li ng-repeat="dropdown in dropdowns" class="dropdown" dropdown>
+							<a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i> {{dropdown.title}}</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 								<li ng-repeat="link in dropdown.links"><a tabindex="-1" ng-href="{{link.url}}" ng-target="{{link.target}}">{{link.title}} <i ng-show="link.target == '_blank'" class="fa fa-external-link"></i></a></li>
 							</ul>
@@ -41,12 +41,12 @@
 </div>
 
 <div class="row">
-	<section class="col-md-12 thumbnailmatrix">
+	<section class="col-md-12 matrix">
 		<div class="row">
-			<div class="col-md-3" ng-repeat="img in imgs" ng-controller="project_thumbs_ctrl">
+			<div class="col-sm-6 col-md-4 col-lg-3" ng-repeat="img in imgs" ng-controller="project_thumbs_ctrl">
 				<a href="img/{{imgdir}}/{{img}}" class="thumbnail fancybox" rel="group" spinner>
 					<div class="image-placeholder">
-						<img ng-hide="imageLoading" ng-src="img/{{imgdir}}/{{img}}" alt="{{imgdir}} - {{img}}">
+						<img class="img-responsive" ng-hide="imageLoading" ng-src="img/{{imgdir}}/{{img}}" alt="{{imgdir}} - {{img}}">
 					</div>
 				</a>
 			</div>

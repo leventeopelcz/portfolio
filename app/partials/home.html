@@ -1,10 +1,10 @@
 <div class="row">
-	<section class="col-md-12 thumbnailmatrix">
+	<section class="col-md-12 matrix">
 		<div class="row">
-    	<div class="col-md-3" ng-repeat="project in projects" ng-controller="home_thumbs_ctrl">
+    	<div class="col-sm-6 col-md-4 col-lg-3" ng-repeat="project in projects" ng-controller="home_thumbs_ctrl">
         <a href="#/project/{{$index + 1}}" class="thumbnail" spinner>
         	<div class="image-placeholder">
-          	<img ng-hide="imageLoading" ng-src="img/{{project.imgdir}}/{{projectImages[0]}}" alt="{{project.title}} - {{projectImages[0]}}">
+          	<img class="img-responsive" ng-hide="imageLoading" ng-src="img/{{project.imgdir}}/{{projectImages[0]}}" alt="{{project.title}} - {{projectImages[0]}}">
           </div>
           <h3>{{project.title}}</h3>
         </a>
@@ -13,8 +13,8 @@
 	</section>
 </div>
 
-<article class="row visible-desktop">
-	<div class="map" data-bottom-top="background-position:center 0px;" data-top-bottom="background-position:center -1000px;">
+<article class="row">
+	<div class="col-md-12 map" data-bottom-top="background-position:center 0px;" data-top-bottom="background-position:center -1000px;">
     
     <div class="row">
       <div class="col-md-12 bottom-dot mr1">

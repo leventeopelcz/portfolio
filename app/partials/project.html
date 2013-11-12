@@ -1,10 +1,10 @@
 <div class="row">
 	<section class="col-md-12">
 		<div class="row">
-			<div class="col-md-7">
+			<div class="col-md-12">
 				<div>
 					<h1>{{title}}</h1>
-					<p>{{info}}</p>
+					<p class="columns">{{info}}</p>
 					
 					<ul class="nav nav-pills">
 						<li>
@@ -23,7 +23,14 @@
 					
 				</div>
 			</div>
-			<div class="col-md-5">
+		</div>
+	</section>
+</div>
+
+<div class="row">
+	<section class="col-md-12">
+		<div class="row">
+			<div class="col-md-12">
 				<h1>Info</h1>
 				<dl class="dl-horizontal">
 					<dt><h4>At:</h4></dt>
@@ -33,7 +40,7 @@
 					<dd ng-show="client"><h4>{{client}}</h4></dd>
 					<hr ng-show="client">
 					<dt><h4>What:</h4></dt>
-					<dd><h4 ng-repeat="w in what">{{w}}</h4></dd>
+					<dd><h5 ng-repeat="w in what"><i class="fa fa-check"></i> {{w}}</h5></dd>
 				</dl>
 			</div>
 		</div>
@@ -44,8 +51,8 @@
 	<section class="col-md-12 matrix">
 		<div class="row">
 			<div class="col-sm-6 col-md-4 col-lg-3" ng-repeat="img in imgs" ng-controller="project_thumbs_ctrl">
-				<a href="img/{{imgdir}}/{{img}}" class="thumbnail fancybox" rel="group" spinner>
-					<div class="image-placeholder">
+				<a href="img/{{imgdir}}/{{img}}" class="thumbnail fancybox" rel="group">
+					<div class="image-placeholder" spinner>
 						<img class="img-responsive" ng-hide="imageLoading" ng-src="img/{{imgdir}}/{{img}}" alt="{{imgdir}} - {{img}}">
 					</div>
 				</a>

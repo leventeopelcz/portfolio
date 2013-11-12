@@ -2,8 +2,8 @@
 	<section class="col-md-12 matrix">
 		<div class="row">
     	<div class="col-sm-6 col-md-4 col-lg-3" ng-repeat="project in projects" ng-controller="home_thumbs_ctrl">
-        <a href="#/project/{{$index + 1}}" class="thumbnail" spinner>
-        	<div class="image-placeholder">
+        <a href="#/project/{{$index + 1}}" class="thumbnail">
+        	<div class="image-placeholder" spinner>
           	<img class="img-responsive" ng-hide="imageLoading" ng-src="img/{{project.imgdir}}/{{projectImages[0]}}" alt="{{project.title}} - {{projectImages[0]}}">
           </div>
           <h3>{{project.title}}</h3>
@@ -92,7 +92,7 @@
 	<section class="col-md-12">
 		<h1 class="text-center">Who am I?</h1>
 		<p class="columns">
-			I was born in Budapest, Hungary. I have always enjoyed making other people smile, to make others happy and forget about their problems. I believe that there is no better way to do this than in the entertainment and video game industries. Video games take their players to another world, one full of fantastical places and amazing adventures where absolutely anything can happen. I have always wanted to be a part in creating and building these worlds. This is why I want to be a part of the video game industry.
+			I was born in Budapest, Hungary. I started to learn software engineering in Secondary School, we started with Pascal and Delphi. I enjoyed it a lot, opened up the world from a whole different perspective. Started to see things from a different angle. Then while exploring this way of life I always had a softer side of me, a side that was way closer to humanity. I love interacting with people, teaching each other, learning from each other, understaing where ones come from and building something new and fascinating. I found design. All my life I have been looking for ways to create something that no one created before or not that way, to help people, to open up new doors. I failed a lot and to this day I still keep failing sometimes. But I achieved a lot. I still have sleepless nights where I try to figure out how to solve a problem, how to make visuals that speaks to everyone yet no one did before, how to make things work in ways that I imagined. How to tell a story, make people believe, cry, laugh, fear, depressed, obsessed, think... How to make my teammates life more easy, how to work better together. Trying out new tools, workflows, learn. Love creating and learning. That's me.
 		</p>
 	</section>
 </div>
@@ -100,7 +100,12 @@
 <div class="row">
 	<article class="col-md-12 text-center quote">
 		<blockquote>
-			There is great satisfaction in bringing a design to life. A maluable creative process can make the difference between causing people to think and feel happy, or causing confusion and unhappiness.
+			"An idea that is not dangerous is unworthy of being called an idea at all." 
+― Oscar Wilde
+	"Others have seen what is and asked why. I have seen what could be and asked why not. " 
+― Pablo Picasso
+"Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep." 
+― Scott Adams
 		</blockquote>
 	</article>
 </div>

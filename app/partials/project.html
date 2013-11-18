@@ -6,7 +6,7 @@
 					<h1>{{title}}</h1>
 					<p class="columns">{{info}}</p>
 					
-					<ul class="nav nav-pills">
+					<ul class="nav nav-pills" ng-class="{true: 'nav-stacked'}[screenWidth <= 768]">
 						<li>
 							<a href="#/home"><i class="fa fa-angle-left"></i> back</a>
 						</li>
@@ -28,23 +28,18 @@
 </div>
 
 <div class="row">
-	<section class="col-md-12">
-		<div class="row">
-			<div class="col-md-12">
-				<h1>Info</h1>
-				<dl class="dl-horizontal">
-					<dt><h4>At:</h4></dt>
-					<dd><h4>{{at}}</h4></dd>
-					<hr>
-					<dt ng-show="client"><h4>Client:</h4></dt>
-					<dd ng-show="client"><h4>{{client}}</h4></dd>
-					<hr ng-show="client">
-					<dt><h4>What:</h4></dt>
-					<dd><h5 ng-repeat="w in what"><i class="fa fa-check"></i> {{w}}</h5></dd>
-				</dl>
-			</div>
-		</div>
-	</section>
+	<article class="col-md-12">
+		<dl class="dl-horizontal">
+			<dt><h3>At:</h3></dt>
+			<dd><h4>{{at}}</h4></dd>
+			<hr>
+			<dt ng-show="client"><h3>Client:</h3></dt>
+			<dd ng-show="client"><h4>{{client}}</h4></dd>
+			<hr ng-show="client">
+			<dt><h3>What:</h3></dt>
+			<dd><h5 ng-repeat="w in what"><i class="fa fa-check"></i> {{w}}</h5></dd>
+		</dl>
+	</article>
 </div>
 
 <div class="row">

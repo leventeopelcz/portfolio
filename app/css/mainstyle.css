@@ -453,3 +453,14 @@ blockquote {
 	margin: 0;
 	border: none;
 }
+blockquote p {
+	font-size: 1.8em;
+	line-height: inherit;
+}
+blockquote small {
+	color: inherit;
+	line-height: inherit;
+}
+.quote {
+	display: none;
+}

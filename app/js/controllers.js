@@ -68,9 +68,7 @@ angular.module('myApp.controllers', [])
 	var computeWidth = function() {
 			return window.innerWidth;
 	};
-	
 	$scope.screenWidth = computeWidth();
-	
 	angular.element(window).bind('resize', function() {
 			$scope.screenWidth = computeWidth();
 			$scope.$digest();

@@ -43,7 +43,7 @@ angular.module('myApp.services', [])
 
 .service('Images', function() {
 	return {
-		preload : function (imgSrc, callback) {
+		Preload : function (imgSrc, callback) {
 			var objImagePreloader = new Image();
 			objImagePreloader.src = imgSrc;
 			if(objImagePreloader.complete) {

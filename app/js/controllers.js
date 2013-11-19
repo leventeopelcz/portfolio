@@ -24,7 +24,7 @@ angular.module('myApp.controllers', [])
 		$scope.projectImages = response;
 		$scope.imageLoading = true;
 		var image = 'img/' + $scope.projects[$scope.$index].imgdir + '/' + $scope.projectImages[0];
-		Images.preload(image, function() {
+		Images.Preload(image, function() {
 			$scope.stopSpinner();
 			$scope.imageLoading = false;
 			if(!$scope.$$phase) {
@@ -86,7 +86,7 @@ angular.module('myApp.controllers', [])
 		$scope.projectImages = response;
 		$scope.imageLoading = true;
 		var image = 'img/' + $scope.projects[$routeParams.projectId - 1].imgdir + '/' + $scope.projectImages[$scope.$index];
-		Images.preload(image, function() {
+		Images.Preload(image, function() {
 			$scope.stopSpinner();
 			$scope.imageLoading = false;
 			if(!$scope.$$phase) {

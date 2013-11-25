@@ -5,14 +5,32 @@
 
 angular.module('myApp.directives', [])
 
+//---------------------------------------------
+//----- DROPDOWN -----//
+//---------------------------------------------
+
+.directive('randomquote', function(Random) {
+	return	{
+		restrict: 'A',
+		link: function(scope, element, attrs) {
+			// better to read quotes from json, put it in ng repeat and we can use $index, would be much nicer
+			scope.quoteId = Random.Range(0, 2);
+		} 
+	}
+})
+
+//---------------------------------------------
+//----- DROPDOWN -----//
+//---------------------------------------------
+
 .directive('dropdown', function() {
 	return	{
 		restrict: 'A',
 		link: function(scope, element, attrs) {
-			$(element).on('show.bs.dropdown', function () {
+			element.on('show.bs.dropdown', function () {
 				element.find('.dropdown-menu').slideToggle(100);
 			});
-			$(element).on('hide.bs.dropdown', function () {
+			element.on('hide.bs.dropdown', function () {
 				element.find('.dropdown-menu').slideToggle(100);
 			});
 		} 
@@ -70,9 +88,8 @@ angular.module('myApp.directives', [])
 			// stop the pinner (from controller)
 			scope.stopSpinner = function() {
 				spinner.stop();
-				$(element).css('-webkit-transition', 'all .1s ease-in-out');
-				$(element).css('-webkit-transform', 'scale(1, 1)');
-				$(element).find('img').fadeIn(400);
+				element.addClass('scaleUp');
+				element.find('img').addClass('fadeIn');
 			};
 		}
 	}

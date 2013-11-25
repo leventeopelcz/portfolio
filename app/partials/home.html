@@ -13,7 +13,7 @@
 	</section>
 </div>
 
-<article class="row map-container">
+<article class="row map-container hidden-xs">
 	<div class="col-md-12 map" data-bottom-top="background-position:center 0px;" data-top-bottom="background-position:center -1000px;">
     
     <div class="row">
@@ -26,8 +26,9 @@
     
     <div class="row">
       <div class="col-md-12 text-center">
+				<h2 class="big-questionmark" data-center-top="background-color:rgba(0,0,0,0); color:rgba(255,255,255,0);" data-center-bottom="background-color:rgba(51,51,51,1); color:rgba(255,255,255,1);">?</h2><br>
         <h2 data-center-top="background-color:rgba(0,0,0,0); color:rgba(255,255,255,0);" data-center-bottom="background-color:rgba(51,51,51,1); color:rgba(255,255,255,1);">
-            What is design (for me)?
+            What is design (for me)
         </h2>
       </div>
     </div>
@@ -242,15 +243,15 @@
 <div class="row">
 	<article class="col-md-12 text-center quote">
 		<blockquote randomquote>
-			<div class="quote">
+			<div ng-show="quoteId == 0">
 				<p>An idea that is not dangerous is unworthy of being called an idea at all.</p> 
 				<small>Oscar Wilde</small>
 			</div>
-			<div class="quote">
+			<div ng-show="quoteId == 1">
 				<p>Others have seen what is and asked why. I have seen what could be and asked why not.</p> 
 				<small>Pablo Picasso</small>
 			</div>
-			<div class="quote">
+			<div ng-show="quoteId == 2">
 				<p>Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep.</p>
 				<small>Scott Adams</small>
 			</div>

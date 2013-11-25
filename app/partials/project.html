@@ -12,7 +12,7 @@
 						</li>
 						<li ng-repeat="dropdown in dropdowns" class="dropdown" dropdown>
 							<a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i> {{dropdown.title}}</a>
-							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+							<ul class="dropdown-menu" role="menu">
 								<li ng-repeat="link in dropdown.links"><a tabindex="-1" ng-href="{{link.url}}" ng-target="{{link.target}}">{{link.title}} <i ng-show="link.target == '_blank'" class="fa fa-external-link"></i></a></li>
 							</ul>
 						</li>
@@ -32,7 +32,7 @@
 		<dl class="dl-horizontal">
 			<dt><h3>At:</h3></dt>
 			<dd><h4>{{at}}</h4></dd>
-			<hr>
+			<dd><hr></dd>
 			<dt ng-show="client"><h3>Client:</h3></dt>
 			<dd ng-show="client"><h4>{{client}}</h4></dd>
 			<hr ng-show="client">

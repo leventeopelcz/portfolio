@@ -6,6 +6,8 @@ angular.module('myApp', ['ngRoute', 'myApp.filters', 'myApp.services', 'myApp.di
   .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 		$routeProvider.when('/', {templateUrl: 'partials/home.html', controller: 'home_ctrl'});
     $routeProvider.when('/project/:projectId', {templateUrl: 'partials/project.html', controller: 'project_ctrl'});
+		$routeProvider.when('/shogunee', {templateUrl: 'partials/shogunee.html'});
+		$routeProvider.when('/zootaire', {templateUrl: 'partials/zootaire.html'});
     $routeProvider.otherwise({redirectTo: '/'});
   }])
 	.run(function($rootScope, $anchorScroll) {

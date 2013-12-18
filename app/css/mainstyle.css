@@ -307,6 +307,7 @@ article:after {
 	left: 0;
   margin-left: auto;
   margin-right: auto;
+	display: none;
 }
 
 .scaleUp {
@@ -333,7 +334,8 @@ article:after {
   100% { transform: scale(1); }
 }
 
-.fadeIn {
+img.fadeIn {
+	display: block;
 	-webkit-animation: fadeIn .4s; /* Safari 4+ */
   -moz-animation:    fadeIn .4s; /* Fx 5+ */
   -o-animation:      fadeIn .4s; /* Opera 12+ */

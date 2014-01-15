@@ -1,6 +1,8 @@
 [
   {
+    "id": 0,
     "title": "Brothers Tale",
+    "type": "jff",
     "at": "VFS",
     "what": [
       "Idea",
@@ -12,7 +14,7 @@
       "Texturing",
       "WeightPainting",
       "Animating",
-      "C#"
+      "UnityScript"
     ],
     "info": "Ages ago, Death wanted to retire. However, in order to do that, he had to kill every living creature. In an ancient race of people, four brothers became heroes who fought Death. They harnessed the power of the elements — earth, air, fire and water — by each wearing a magical mask imbued with these powers. They fought valiantly and, ultimately, denied Death in his bid to destroy mankind. Yet they sacrificed their lives in the process to save the people they loved. And they left behind a fifth brother — a little boy — who had been too young to fight. Now, he is a man embarking on a quest to kill Death and avenge the demise of his brothers.",
     "imgdir": "brothers-tale",
@@ -48,7 +50,9 @@
     ]
   },
   {
+    "id": 1,
     "title": "Shogunee",
+    "type": "jff",
     "at": "Just for fun",
     "what": [
       "Idea",
@@ -67,7 +71,9 @@
     ]
   },
   {
+    "id": 2,
     "title": "Zootaire",
+    "type": "jff",
     "at": "Just for fun",
     "what": [
       "Idea",
@@ -84,7 +90,9 @@
     ]
   },
   {
+    "id": 3,
     "title": "CBC - Sodium Calculator",
+    "type": "pro",
     "at": "Ayogo Inc.",
     "what": [
       "UX/UI",
@@ -105,14 +113,16 @@
     ]
   },
   {
+    "id": 4,
     "title": "Ayogo Website Update",
+    "type": "pro",
     "at": "Ayogo Inc.",
     "what": [
       "UI",
       "Supervised Coding",
       "HTML5 & CSS3",
       "jQuery",
-      "AngularJS"
+      "WordPress"
     ],
     "info": "Redesign of the ayogo website with the focus on ayogo's products rather than it's projects. After I finished with the comps in PS and created helper files -what you can see below- they could code the site in my total absence making it perfect without supervision. I like that. :)",
     "imgdir": "ayogo-website-update",
@@ -123,5 +133,19 @@
         "target": "_blank"
       }
     ]
+  },
+  {
+    "id": 5,
+    "title": "Ayogo - Empower",
+    "type": "pro",
+    "at": "Ayogo Inc.",
+    "what": [
+      "UI",
+      "HTML5 & CSS3",
+      "jQuery",
+      "AngularJS"
+    ],
+    "info": "Started out as an internal project to show off the possibilities of the ayogo framework to clients. One client loved it so much that hired us to do a project with the this UI. Worked closely with UX and Art to achieve a consistent look in art assets and UI.",
+    "imgdir": "empower"
   }
 ]

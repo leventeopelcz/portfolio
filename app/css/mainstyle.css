@@ -115,6 +115,13 @@ body {
 .matrix {
 	padding-top: 20px;
 }
+.matrix h2 {
+	margin-top: 30px;
+	display: inline-block;
+}
+.matrix h2:first-child {
+	margin-top: 0;
+}
 a.thumbnail {
 	text-decoration: none;
 	color: #333;

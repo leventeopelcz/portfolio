@@ -93,4 +93,27 @@ angular.module('myApp.directives', [])
 			};
 		}
 	}
+})
+
+//---------------------------------------------
+//----- SKROLLR -----//
+//---------------------------------------------
+
+.directive('skrollr', function(Device) {
+	return	{
+		restrict: 'A',
+		link: function(scope, element, attrs) {
+			if(!Device.IsMobile()) {
+				if(typeof scope.skrollr === 'undefined') {
+					console.log('woo');
+					scope.skrollr = skrollr.init({
+						forceHeight: false
+					});
+				} else {
+					scope.skrollr.refresh();
+				}
+			}
+		} 
+	}
 });
+

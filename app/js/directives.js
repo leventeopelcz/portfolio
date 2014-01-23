@@ -105,7 +105,6 @@ angular.module('myApp.directives', [])
 		link: function(scope, element, attrs) {
 			if(!Device.IsMobile()) {
 				if(typeof scope.skrollr === 'undefined') {
-					console.log('woo');
 					scope.skrollr = skrollr.init({
 						forceHeight: false
 					});

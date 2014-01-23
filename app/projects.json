@@ -2,7 +2,7 @@
   {
     "id": 0,
     "title": "Brothers Tale",
-    "type": "jff",
+    "type": "hs",
     "at": "VFS",
     "what": [
       "Idea",
@@ -52,8 +52,8 @@
   {
     "id": 1,
     "title": "Shogunee",
-    "type": "jff",
-    "at": "Just for fun",
+    "type": "hs",
+    "at": "ELTE",
     "what": [
       "Idea",
       "UX/UI",
@@ -73,8 +73,8 @@
   {
     "id": 2,
     "title": "Zootaire",
-    "type": "jff",
-    "at": "Just for fun",
+    "type": "hs",
+    "at": "ELTE",
     "what": [
       "Idea",
       "UX/UI",
@@ -147,5 +147,23 @@
     ],
     "info": "Started out as an internal project to show off the possibilities of the ayogo framework to clients. One client loved it so much that hired us to do a project with the this UI. Worked closely with UX and Art to achieve a consistent look in art assets and UI.",
     "imgdir": "empower"
+  },
+  {
+    "id": 6,
+    "title": "DD20",
+    "type": "jff",
+    "imgdir": "dd20"
+  },
+  {
+    "id": 7,
+    "title": "Krav Maga",
+    "type": "jff",
+    "imgdir": "krav-maga"
+  },
+  {
+    "id": 8,
+    "title": "Life is a dream",
+    "type": "jff",
+    "imgdir": "life-is-a-dream"
   }
 ]

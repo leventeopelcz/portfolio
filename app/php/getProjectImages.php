@@ -17,6 +17,7 @@
 			closedir($dirhandler);
 			
 			// convert it to json and make json secure with angular thus the ")]}',\n" prefix
+			sort($files);
 			echo ")]}',\n" . json_encode($files);
 		}
 	}

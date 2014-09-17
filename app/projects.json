@@ -51,6 +51,26 @@
   },
   {
     "id": 1,
+    "title": "DiabetesSisters",
+    "type": "pro",
+    "at": "Ayogo Inc.",
+    "what": [
+      "HTML5 & CSS3",
+      "Drupal",
+      "jQuery"
+    ],
+    "info": "DiabetesSisters is a Non-profit organisation that helps women with diabetes. They organising talks and events. People can connect through the site, get help, share information, buy some branded wares and so on. All made in drupal so the client can keep updating it, modifying it as they see fit. Also had to work on older ie versions.",
+    "imgdir": "diabetessisters",
+    "links": [
+      {
+        "title": "check it out",
+        "url": "https://diabetessisters.org/",
+        "target": "_blank"
+      }
+    ]
+  },
+  {
+    "id": 2,
     "title": "Shogunee",
     "type": "hs",
     "at": "ELTE",
@@ -71,7 +91,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Zootaire",
     "type": "hs",
     "at": "ELTE",
@@ -90,7 +110,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "CBC - Sodium Calculator",
     "type": "pro",
     "at": "Ayogo Inc.",
@@ -113,7 +133,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Ayogo Website Update",
     "type": "pro",
     "at": "Ayogo Inc.",
@@ -135,7 +155,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Ayogo - Empower",
     "type": "pro",
     "at": "Ayogo Inc.",
@@ -149,19 +169,19 @@
     "imgdir": "empower"
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "DD20",
     "type": "jff",
     "imgdir": "dd20"
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "Krav Maga",
     "type": "jff",
     "imgdir": "krav-maga"
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "Life is a dream",
     "type": "jff",
     "imgdir": "life-is-a-dream"

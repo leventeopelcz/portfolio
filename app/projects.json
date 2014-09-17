@@ -1,189 +1,175 @@
-[
-  {
-    "id": 0,
-    "title": "Brother's Tale",
-    "type": "hs",
-    "at": "VFS",
-    "what": [
-      "Idea",
-      "UX/UI",
-      "Art",
-      "GameDesign",
-      "LevelDesign",
-      "Modelling",
-      "Texturing",
-      "WeightPainting",
-      "Animating",
-      "UnityScript"
-    ],
-    "info": "Ages ago, Death wanted to retire. However, in order to do that, he had to kill every living creature. In an ancient race of people, four brothers became heroes who fought Death. They harnessed the power of the elements — earth, air, fire and water — by each wearing a magical mask imbued with these powers. They fought valiantly and, ultimately, denied Death in his bid to destroy mankind. Yet they sacrificed their lives in the process to save the people they loved. And they left behind a fifth brother — a little boy — who had been too young to fight. Now, he is a man embarking on a quest to kill Death and avenge the demise of his brothers.",
-    "imgdir": "brothers-tale",
-    "dropdowns": [
-      {
-        "title": "look at case studies",
-        "links": [
-          {
-            "title": "read the blog",
-            "url": "http://community.vfs.com/oomph/2011/10/game-design-yeah-digital-design-students-can-do-that/",
-            "target": "_blank"
-          },
-          {
-            "title": "watch the video",
-            "url": "http://vimeo.com/32888874",
-            "target": "_blank"
-          }
-        ]
-      },
-      {
-        "title": "dowload the game",
-        "links": [
-          {
-            "title": "for Windows",
-            "url": "unity/BrothersTale_Win.zip"
-          },
-          {
-            "title": "for Mac",
-            "url": "unity/BrothersTale_Mac.zip"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 1,
-    "title": "DiabetesSisters",
-    "type": "pro",
-    "at": "Ayogo Inc.",
-    "what": [
-      "HTML5 & CSS3",
-      "Drupal",
-      "jQuery"
-    ],
-    "info": "DiabetesSisters is a Non-profit organisation that helps women with diabetes. They organising talks and events. People can connect through the site, get help, share information, buy some branded wares and so on. All made in drupal so the client can keep updating it, modifying it as they see fit. Also had to work on older ie versions.",
-    "imgdir": "diabetessisters",
-    "links": [
-      {
-        "title": "check it out",
-        "url": "https://diabetessisters.org/",
-        "target": "_blank"
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Shogunee",
-    "type": "hs",
-    "at": "ELTE",
-    "what": [
-      "Idea",
-      "UX/UI",
-      "Art",
-      "GameDesign",
-      "AS3"
-    ],
-    "info": "I have a certain affinity for the games I played growing up. I loved Tower Defense games, so when my abilities in Flash developed, I was able to create my own using AS3. The point of the game is to protect your castle from ninjas and samurais hordes by placing different towers in the best possible spot. Players need to be careful, because there are invisible ninjas and other enemies who can attack and take out the towers. Players can sell, repair and upgrade their towers for better protection. Shogunee was an experiment in Flash development. My goal was to take on the challenge of creating a fully functional Flash game from scratch. The project was successful and was instrumental in developing my abilities with Action Script, Flash and Adobe Illustrator.",
-    "imgdir": "shogunee",
-    "links": [
-      {
-        "title": "play Shogunee",
-        "url": "#/shogunee"
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Zootaire",
-    "type": "hs",
-    "at": "ELTE",
-    "what": [
-      "Idea",
-      "UX/UI",
-      "AS3"
-    ],
-    "info": "I got an assignment in University to create a soliter table game —not solitaire, the card game!— using Visual Studio. I loved the project so much that I decided to turn it into a Flash game. I turned my C# code into AS3 and created a cool, childish design for it. I wanted to make the game for kids to enhance their logic capacities. The goal of Zootaire is to reduce the number of stones —or in this case sheeps— all the way down to one by moving stones to the side of a neighboring stone, but only if there is an empty space. Movements can be made vertically or horizontally, not diagonally.",
-    "imgdir": "zootaire",
-    "links": [
-      {
-        "title": "play Zootaire",
-        "url": "#/zootaire"
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "title": "CBC - Sodium Calculator",
-    "type": "pro",
-    "at": "Ayogo Inc.",
-    "what": [
-      "UX/UI",
-      "Time/Team/Client Management",
-      "Supervised Coding",
-      "HTML5 & CSS3",
-      "jQuery"
-    ],
-    "client": "CBC - Marketplace",
-    "info": "Suddenly we got an opportunity to work for CBC Marketplace on an online, interactive html5 and css3 based (so no flash) sodium calculator for their upcoming show. The deadline was super close, we only got two weeks before the show started. Becuse of budget and timing, Ayogo assigned this project to me as a one man army, though I got a programmer intern to help me out and start programming the logic parallel while I was designing the UI and UX. In this two week, my responsibilities spanned from talking to the client, keeping my boss in the loop, building a fast and non-redundant work process between me and Allen (my little helper, who helped a LOT), Designing UX/UI from scratch, using stock icons where possible for foods and at the end, ironing out bugs in the code. Oh, almost forgot to mention, that this 2 week was shortened by 2 days also because I requested some vacation time off before we even knew about this project, and that vacation time was really precious to me, because my girlfriend left the country, so wanted to spend my last days with her only. So even with -2 days, we delivered before time, way under budget and the client was super happy and impressed with the quality of work in this short time we had to deliver.",
-    "imgdir": "cbc-sodium",
-    "links": [
-      {
-        "title": "check it out",
-        "url": "http://www.cbc.ca/news/interactives/sodium-calculator/index.html",
-        "target": "_blank"
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "title": "Ayogo Website Update",
-    "type": "pro",
-    "at": "Ayogo Inc.",
-    "what": [
-      "UI",
-      "Supervised Coding",
-      "HTML5 & CSS3",
-      "jQuery",
-      "WordPress"
-    ],
-    "info": "Redesign of the ayogo website with the focus on ayogo's products rather than it's projects. After I finished with the comps in PS and created helper files -what you can see below- they could code the site in my total absence making it perfect without supervision. I like that. :)",
-    "imgdir": "ayogo-website-update",
-    "links": [
-      {
-        "title": "check it out",
-        "url": "http://ayogo.com/",
-        "target": "_blank"
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "title": "Ayogo - Empower",
-    "type": "pro",
-    "at": "Ayogo Inc.",
-    "what": [
-      "UI",
-      "HTML5 & CSS3",
-      "jQuery",
-      "AngularJS"
-    ],
-    "info": "Started out as an internal project to show off the possibilities of the ayogo framework to clients. One client loved it so much that hired us to do a project with the this UI. Worked closely with UX and Art to achieve a consistent look in art assets and UI.",
-    "imgdir": "empower"
-  },
-  {
-    "id": 7,
-    "title": "DD20",
-    "type": "jff",
-    "imgdir": "dd20"
-  },
-  {
-    "id": 8,
-    "title": "Krav Maga",
-    "type": "jff",
-    "imgdir": "krav-maga"
-  },
-  {
-    "id": 9,
-    "title": "Life is a dream",
-    "type": "jff",
-    "imgdir": "life-is-a-dream"
-  }
-]
+{
+  "pro": [
+    {
+      "title": "CBC - Sodium Calculator",
+      "at": "Ayogo Inc.",
+      "what": [
+        "UX/UI",
+        "Time/Team/Client Management",
+        "Supervised Coding",
+        "HTML5 & CSS3",
+        "jQuery"
+      ],
+      "client": "CBC - Marketplace",
+      "info": "Suddenly we got an opportunity to work for CBC Marketplace on an online, interactive html5 and css3 based (so no flash) sodium calculator for their upcoming show. The deadline was super close, we only got two weeks before the show started. Becuse of budget and timing, Ayogo assigned this project to me as a one man army, though I got a programmer intern to help me out and start programming the logic parallel while I was designing the UI and UX. In this two week, my responsibilities spanned from talking to the client, keeping my boss in the loop, building a fast and non-redundant work process between me and Allen (my little helper, who helped a LOT), Designing UX/UI from scratch, using stock icons where possible for foods and at the end, ironing out bugs in the code. Oh, almost forgot to mention, that this 2 week was shortened by 2 days also because I requested some vacation time off before we even knew about this project, and that vacation time was really precious to me, because my girlfriend left the country, so wanted to spend my last days with her only. So even with -2 days, we delivered before time, way under budget and the client was super happy and impressed with the quality of work in this short time we had to deliver.",
+      "imgdir": "cbc-sodium",
+      "links": [
+        {
+          "title": "check it out",
+          "url": "http://www.cbc.ca/news/interactives/sodium-calculator/index.html",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "title": "Ayogo - Empower",
+      "at": "Ayogo Inc.",
+      "what": [
+        "UI",
+        "HTML5 & CSS3",
+        "jQuery",
+        "AngularJS"
+      ],
+      "info": "Started out as an internal project to show off the possibilities of the ayogo framework to clients. One client loved it so much that hired us to do a project with the this UI. Worked closely with UX and Art to achieve a consistent look in art assets and UI.",
+      "imgdir": "empower"
+    },
+    {
+      "title": "Ayogo Website Update",
+      "at": "Ayogo Inc.",
+      "what": [
+        "UI",
+        "Supervised Coding",
+        "HTML5 & CSS3",
+        "jQuery",
+        "WordPress"
+      ],
+      "info": "Redesign of the ayogo website with the focus on ayogo's products rather than it's projects. After I finished with the comps in PS and created helper files -what you can see below- they could code the site in my total absence making it perfect without supervision. I like that. :)",
+      "imgdir": "ayogo-website-update",
+      "links": [
+        {
+          "title": "check it out",
+          "url": "http://ayogo.com/",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "title": "DiabetesSisters",
+      "at": "Ayogo Inc.",
+      "what": [
+        "HTML5 & CSS3",
+        "Drupal",
+        "jQuery"
+      ],
+      "info": "DiabetesSisters is a Non-profit organisation that helps women with diabetes. They organising talks and events. People can connect through the site, get help, share information, buy some branded wares and so on. All made in drupal so the client can keep updating it, modifying it as they see fit. Also had to work on older ie versions.",
+      "imgdir": "diabetessisters",
+      "links": [
+        {
+          "title": "check it out",
+          "url": "https://diabetessisters.org/",
+          "target": "_blank"
+        }
+      ]
+    }
+  ],
+  "hs": [
+    {
+      "title": "Brother's Tale",
+      "at": "VFS",
+      "what": [
+        "Idea",
+        "UX/UI",
+        "Art",
+        "GameDesign",
+        "LevelDesign",
+        "Modelling",
+        "Texturing",
+        "WeightPainting",
+        "Animating",
+        "UnityScript"
+      ],
+      "info": "Ages ago, Death wanted to retire. However, in order to do that, he had to kill every living creature. In an ancient race of people, four brothers became heroes who fought Death. They harnessed the power of the elements — earth, air, fire and water — by each wearing a magical mask imbued with these powers. They fought valiantly and, ultimately, denied Death in his bid to destroy mankind. Yet they sacrificed their lives in the process to save the people they loved. And they left behind a fifth brother — a little boy — who had been too young to fight. Now, he is a man embarking on a quest to kill Death and avenge the demise of his brothers.",
+      "imgdir": "brothers-tale",
+      "dropdowns": [
+        {
+          "title": "look at case studies",
+          "links": [
+            {
+              "title": "read the blog",
+              "url": "http://community.vfs.com/oomph/2011/10/game-design-yeah-digital-design-students-can-do-that/",
+              "target": "_blank"
+            },
+            {
+              "title": "watch the video",
+              "url": "http://vimeo.com/32888874",
+              "target": "_blank"
+            }
+          ]
+        },
+        {
+          "title": "dowload the game",
+          "links": [
+            {
+              "title": "for Windows",
+              "url": "unity/BrothersTale_Win.zip"
+            },
+            {
+              "title": "for Mac",
+              "url": "unity/BrothersTale_Mac.zip"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Shogunee",
+      "at": "ELTE",
+      "what": [
+        "Idea",
+        "UX/UI",
+        "Art",
+        "GameDesign",
+        "AS3"
+      ],
+      "info": "I have a certain affinity for the games I played growing up. I loved Tower Defense games, so when my abilities in Flash developed, I was able to create my own using AS3. The point of the game is to protect your castle from ninjas and samurais hordes by placing different towers in the best possible spot. Players need to be careful, because there are invisible ninjas and other enemies who can attack and take out the towers. Players can sell, repair and upgrade their towers for better protection. Shogunee was an experiment in Flash development. My goal was to take on the challenge of creating a fully functional Flash game from scratch. The project was successful and was instrumental in developing my abilities with Action Script, Flash and Adobe Illustrator.",
+      "imgdir": "shogunee",
+      "links": [
+        {
+          "title": "play Shogunee",
+          "url": "#/shogunee"
+        }
+      ]
+    },
+    {
+      "title": "Zootaire",
+      "at": "ELTE",
+      "what": [
+        "Idea",
+        "UX/UI",
+        "AS3"
+      ],
+      "info": "I got an assignment in University to create a soliter table game —not solitaire, the card game!— using Visual Studio. I loved the project so much that I decided to turn it into a Flash game. I turned my C# code into AS3 and created a cool, childish design for it. I wanted to make the game for kids to enhance their logic capacities. The goal of Zootaire is to reduce the number of stones —or in this case sheeps— all the way down to one by moving stones to the side of a neighboring stone, but only if there is an empty space. Movements can be made vertically or horizontally, not diagonally.",
+      "imgdir": "zootaire",
+      "links": [
+        {
+          "title": "play Zootaire",
+          "url": "#/zootaire"
+        }
+      ]
+    }
+  ],
+  "jff": [
+    {
+      "title": "DD20",
+      "imgdir": "dd20"
+    },
+    {
+      "title": "Krav Maga",
+      "imgdir": "krav-maga"
+    },
+    {
+      "title": "Life is a dream",
+      "imgdir": "life-is-a-dream"
+    }
+  ]
+}

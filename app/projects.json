@@ -70,6 +70,25 @@
           "target": "_blank"
         }
       ]
+    },
+    {
+      "title": "Opelcz Rozsa Kerteszet",
+      "at": "Freelancer",
+      "what": [
+        "UX/UI",
+        "LESS",
+        "JADE",
+        "JQuery"
+      ],
+      "info": "My uncle (his name is Robert) grew beautiful roses of every kind from when I was a child. Actually my father used to earn a living from it too, he was one of the best around. But my father moved on to doing insurance and Robert stayed. He asked me not long ago - at the time of writing - if I could make him a website to sell his roses. I also suggested to put it up on social media. You know, nothing big. Nothing like the huge budget corporations at all. Just inviting friends and their friends, might someone want to buy from the actual gardener rather then from a retail flower store. It actually turned out that quite a bit of people found him through the site and social media and sold almost all his roses. He was one of my best client. He only cared to be out there as fast as possible. So I made him a minimalistic, simple one page trendy site that is responsive - works on all screen sizes resolutions and devices-. It took me one week from scratch. And they love it. Still. :)",
+      "imgdir": "opelczrozsa",
+      "links": [
+        {
+          "title": "check it out",
+          "url": "http://opelczrozsakerteszet.hu/",
+          "target": "_blank"
+        }
+      ]
     }
   ],
   "hs": [

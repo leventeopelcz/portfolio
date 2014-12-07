@@ -5,7 +5,7 @@
     	<div class="col-sm-6 col-md-4 col-lg-3" ng-repeat="project in projects.pro" ng-controller="home_thumbs_ctrl">
         <a ng-href="#/project/pro/{{$index + 1}}" class="thumbnail">
         	<div class="image-placeholder" spinner>
-          	<img class="img-responsive" ng-hide="imageLoading" ng-src="img/{{project.imgdir}}/{{projectImages[0]}}" alt="{{project.title}} - {{projectImages[0]}}">
+          	<img class="img-responsive" ng-hide="imageLoading" ng-src="img/{{project.imgdir}}/thumb/{{projectImages[0]}}" alt="{{project.title}} - {{projectImages[0]}}">
           </div>
           <h3>{{project.title}}</h3>
         </a>
@@ -16,7 +16,7 @@
     	<div class="col-sm-6 col-md-4 col-lg-3" ng-repeat="project in projects.hs" ng-controller="home_thumbs_ctrl">
         <a ng-href="#/project/hs/{{$index + 1}}" class="thumbnail">
         	<div class="image-placeholder" spinner>
-          	<img class="img-responsive" ng-hide="imageLoading" ng-src="img/{{project.imgdir}}/{{projectImages[0]}}" alt="{{project.title}} - {{projectImages[0]}}">
+          	<img class="img-responsive" ng-hide="imageLoading" ng-src="img/{{project.imgdir}}/thumb/{{projectImages[0]}}" alt="{{project.title}} - {{projectImages[0]}}">
           </div>
           <h3>{{project.title}}</h3>
         </a>
@@ -27,7 +27,7 @@
     	<div class="col-sm-6 col-md-4 col-lg-3" ng-repeat="project in projects.jff" ng-controller="home_thumbs_ctrl">
         <a ng-href="img/{{project.imgdir}}/{{projectImages[0]}}" class="thumbnail" target="_blank">
         	<div class="image-placeholder" spinner>
-          	<img class="img-responsive" ng-hide="imageLoading" ng-src="img/{{project.imgdir}}/{{projectImages[0]}}" alt="{{project.title}} - {{projectImages[0]}}">
+          	<img class="img-responsive" ng-hide="imageLoading" ng-src="img/{{project.imgdir}}/thumb/{{projectImages[0]}}" alt="{{project.title}} - {{projectImages[0]}}">
           </div>
           <h3><i class="fa fa-picture-o"></i> {{project.title}}</h3>
         </a>

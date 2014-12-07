@@ -45,12 +45,13 @@
 <div class="row">
 	<section class="col-md-12 matrix">
 		<div class="row">
-			<div class="col-sm-6 col-md-4 col-lg-3" ng-repeat="img in imgs" ng-controller="project_thumbs_ctrl">
-				<a ng-href="img/{{imgdir}}/{{img}}" class="thumbnail" target="_blank">
+			<div class="col-xs-12 text-center" ng-repeat="img in imgs" ng-controller="project_thumbs_ctrl">
+              <img src="img/{{imgdir}}/{{img}}" class="img-responsive" alt="{{img}}">
+				<!--<a ng-href="img/{{imgdir}}/{{img}}" class="thumbnail" target="_blank">
 					<div class="image-placeholder" spinner>
 						<img class="img-responsive" ng-hide="imageLoading" ng-src="img/{{imgdir}}/{{img}}" alt="{{imgdir}} - {{img}}">
 					</div>
-				</a>
+				</a>-->
 			</div>
 		</div>
 	</section>

@@ -20,10 +20,11 @@ angular.module('myApp.controllers', [])
 //---------------------------------------------
 
 .controller('home_thumbs_ctrl', ['ProjectImages', 'Images', '$scope', '$rootScope', 'Device', function(ProjectImages, Images, $scope, $rootScope, Device) {
-  ProjectImages.get($scope.project.imgdir, function(response) {
+  ProjectImages.get($scope.project.imgdir+'/thumb/', function(response) {
     $scope.projectImages = response;
     $scope.imageLoading = true;
-    var image = 'img/' + $scope.project.imgdir + '/' + $scope.projectImages[0];
+    var image = 'img/' + $scope.project.imgdir + '/thumb/' + $scope.projectImages[0];
+    console.log(image);
     Images.Preload(image, function() {
       $scope.stopSpinner();
       $scope.imageLoading = false;

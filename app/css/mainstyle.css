@@ -454,6 +454,8 @@ img.fadeIn {
 }
 .map {
   background: url(../img/map.png) center center repeat-y;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .row-fluid [class*="span"] {
   position: relative;

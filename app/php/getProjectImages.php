@@ -8,7 +8,7 @@
 			$numfiles = 0;
 			
 			while ($file = readdir($dirhandler)) {
-				if ($file != '.' && $file != '..') {
+				if ($file != '.' && $file != '..' && !is_dir($directory . '/' . $file)) {
 					$files[$numfiles] = $file;
 					$numfiles++;
 				}

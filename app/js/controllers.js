@@ -24,7 +24,6 @@ angular.module('myApp.controllers', [])
     $scope.projectImages = response;
     $scope.imageLoading = true;
     var image = 'img/' + $scope.project.imgdir + '/thumb/' + $scope.projectImages[0];
-    console.log(image);
     Images.Preload(image, function() {
       $scope.stopSpinner();
       $scope.imageLoading = false;
@@ -62,6 +61,7 @@ angular.module('myApp.controllers', [])
     $scope.imgs				= $scope.projects[type][$routeParams.projectId - 1].imgs;
     $scope.dropdowns 	    = $scope.projects[type][$routeParams.projectId - 1].dropdowns;
     $scope.links 			= $scope.projects[type][$routeParams.projectId - 1].links;
+    $scope.video            = $scope.projects[type][$routeParams.projectId - 1].video;
     ProjectImages.get($scope.projects[type][$routeParams.projectId - 1].imgdir, function(response) {
       $scope.imgs = response;
     });
@@ -85,8 +85,9 @@ angular.module('myApp.controllers', [])
   var type = $location.path().split('/').reverse()[1];
   ProjectImages.get($scope.projects[type][$routeParams.projectId - 1].imgdir, function(response) {
     $scope.projectImages = response;
-    $scope.imageLoading = true;
+    //$scope.imageLoading = true;
     var image = 'img/' + $scope.projects[type][$routeParams.projectId - 1].imgdir + '/' + $scope.projectImages[$scope.$index];
+      /*
     Images.Preload(image, function() {
       $scope.stopSpinner();
       $scope.imageLoading = false;
@@ -94,5 +95,6 @@ angular.module('myApp.controllers', [])
         $scope.$digest();
       }
     });
+    */
   });
 }]);

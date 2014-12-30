@@ -72,6 +72,43 @@
       ]
     },
     {
+      "title": "Match 3",
+      "at": "Ayogo",
+      "what": [
+        "HTML5 & CSS3",
+        "jQuery",
+        "AngularJS",
+        "CreateJS"
+      ],
+      "info": "Coming soon",
+      "imgdir": "match3",
+      "links": [
+        {
+          "title": "play Match 3",
+          "url": "#/match3"
+        }
+      ]
+    },
+     {
+      "title": "Fit2Me",
+      "at": "Ayogo Inc.",
+      "what": [
+        "HTML5 & CSS3",
+        "AngularJS",
+        "jQuery"
+      ],
+      "client": "AstraZeneca",
+      "info": "Coming Soon.",
+      "imgdir": "fit2me",
+      "links": [
+        {
+          "title": "check it out",
+          "url": "http://www.fit2me.com/",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
       "title": "Opelcz Rozsa Kerteszet",
       "at": "Freelancer",
       "what": [
@@ -176,6 +213,27 @@
           "url": "#/zootaire"
         }
       ]
+    }
+  ],
+  "wip": [
+    {
+      "title": "Swallow",
+      "at": "Ayogo Inc.",
+      "what": [
+        "UX/UI"
+      ],
+      "info": "Coming Soon.",
+      "imgdir": "swallow"
+    },
+    {
+      "title": "Fit2Me Early Stage",
+      "at": "Ayogo Inc.",
+      "what": [
+        "UI"
+      ],
+      "client": "AstraZeneca",
+      "info": "Coming Soon.",
+      "imgdir": "fit2me-early"
     }
   ],
   "jff": [

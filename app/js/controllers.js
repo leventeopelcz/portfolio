@@ -62,6 +62,7 @@ angular.module('myApp.controllers', [])
     $scope.dropdowns 	    = $scope.projects[type][$routeParams.projectId - 1].dropdowns;
     $scope.links 			= $scope.projects[type][$routeParams.projectId - 1].links;
     $scope.video            = $scope.projects[type][$routeParams.projectId - 1].video;
+    $scope.imgonly          = $scope.projects[type][$routeParams.projectId - 1].imgonly;
     ProjectImages.get($scope.projects[type][$routeParams.projectId - 1].imgdir, function(response) {
       $scope.imgs = response;
     });

@@ -95,16 +95,6 @@ header img.img-responsive {
 
 /* Large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {
-  .columns {
-    -moz-column-count: 3;
-    -webkit-column-count: 3;
-    -o-column-count: 3;
-    column-count: 3;
-  }
-}
-
-
 /* Globals */
 
 body {

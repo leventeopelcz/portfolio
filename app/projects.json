@@ -1,7 +1,32 @@
 {
   "pro": [
     {
-      "title": "CBC - Sodium Calculator",
+      "title": "Ayogo Website Update",
+      "at": "Ayogo Inc.",
+      "what": [
+        "UI",
+        "Supervised Coding",
+        "HTML5 & CSS3",
+        "jQuery",
+        "WordPress"
+      ],
+      "info": "Redesign of the ayogo website with the focus on ayogo's products rather than it's projects. After I finished with the comps in PS and created helper files -what you can see below- they could code the site in my total absence making it perfect without supervision. I like that. :)",
+      "imgdir": "ayogo-website-update"
+    },
+    {
+      "title": "Ayogo - Empower",
+      "at": "Ayogo Inc.",
+      "what": [
+        "UI",
+        "HTML5 & CSS3",
+        "jQuery",
+        "AngularJS"
+      ],
+      "info": "Started out as an internal project to show off the possibilities of the ayogo framework to clients. One client loved it so much that hired us to do a project with the this UI. Worked closely with UX and Art to achieve a consistent look in art assets and UI.",
+      "imgdir": "empower"
+    },
+    {
+      "title": "Sodium Calculator",
       "at": "Ayogo Inc.",
       "what": [
         "UX/UI",
@@ -22,38 +47,6 @@
       ]
     },
     {
-      "title": "Ayogo - Empower",
-      "at": "Ayogo Inc.",
-      "what": [
-        "UI",
-        "HTML5 & CSS3",
-        "jQuery",
-        "AngularJS"
-      ],
-      "info": "Started out as an internal project to show off the possibilities of the ayogo framework to clients. One client loved it so much that hired us to do a project with the this UI. Worked closely with UX and Art to achieve a consistent look in art assets and UI.",
-      "imgdir": "empower"
-    },
-    {
-      "title": "Ayogo Website Update",
-      "at": "Ayogo Inc.",
-      "what": [
-        "UI",
-        "Supervised Coding",
-        "HTML5 & CSS3",
-        "jQuery",
-        "WordPress"
-      ],
-      "info": "Redesign of the ayogo website with the focus on ayogo's products rather than it's projects. After I finished with the comps in PS and created helper files -what you can see below- they could code the site in my total absence making it perfect without supervision. I like that. :)",
-      "imgdir": "ayogo-website-update",
-      "links": [
-        {
-          "title": "check it out",
-          "url": "http://ayogo.com/",
-          "target": "_blank"
-        }
-      ]
-    },
-    {
       "title": "DiabetesSisters",
       "at": "Ayogo Inc.",
       "what": [
@@ -61,6 +54,7 @@
         "Drupal",
         "jQuery"
       ],
+      "client": "DiabetesSisters",
       "info": "DiabetesSisters is a Non-profit organisation that helps women with diabetes. They organising talks and events. People can connect through the site, get help, share information, buy some branded wares and so on. All made in drupal so the client can keep updating it, modifying it as they see fit. Also had to work on older ie versions.",
       "imgdir": "diabetessisters",
       "links": [
@@ -70,6 +64,15 @@
           "target": "_blank"
         }
       ]
+    },
+    {
+      "title": "Swallow",
+      "at": "Ayogo Inc.",
+      "what": [
+        "UX/UI"
+      ],
+      "info": "Coming Soon.",
+      "imgdir": "swallow"
     },
     {
       "title": "Match 3",
@@ -89,10 +92,11 @@
         }
       ]
     },
-     {
+    {
       "title": "Fit2Me",
       "at": "Ayogo Inc.",
       "what": [
+        "Early UI",
         "HTML5 & CSS3",
         "AngularJS",
         "jQuery"
@@ -128,7 +132,7 @@
       ]
     }
   ],
-  "hs": [
+  "jff": [
     {
       "title": "Brother's Tale",
       "at": "VFS",
@@ -179,6 +183,23 @@
       ]
     },
     {
+      "title": "Zootaire",
+      "at": "ELTE",
+      "what": [
+        "Idea",
+        "UX/UI",
+        "AS3"
+      ],
+      "info": "I got an assignment in University to create a soliter table game —not solitaire, the card game!— using Visual Studio. I loved the project so much that I decided to turn it into a Flash game. I turned my C# code into AS3 and created a cool, childish design for it. I wanted to make the game for kids to enhance their logic capacities. The goal of Zootaire is to reduce the number of stones —or in this case sheeps— all the way down to one by moving stones to the side of a neighboring stone, but only if there is an empty space. Movements can be made vertically or horizontally, not diagonally.",
+      "imgdir": "zootaire",
+      "links": [
+        {
+          "title": "play Zootaire",
+          "url": "#/zootaire"
+        }
+      ]
+    },
+    {
       "title": "Shogunee",
       "at": "ELTE",
       "what": [
@@ -198,56 +219,19 @@
       ]
     },
     {
-      "title": "Zootaire",
-      "at": "ELTE",
-      "what": [
-        "Idea",
-        "UX/UI",
-        "AS3"
-      ],
-      "info": "I got an assignment in University to create a soliter table game —not solitaire, the card game!— using Visual Studio. I loved the project so much that I decided to turn it into a Flash game. I turned my C# code into AS3 and created a cool, childish design for it. I wanted to make the game for kids to enhance their logic capacities. The goal of Zootaire is to reduce the number of stones —or in this case sheeps— all the way down to one by moving stones to the side of a neighboring stone, but only if there is an empty space. Movements can be made vertically or horizontally, not diagonally.",
-      "imgdir": "zootaire",
-      "links": [
-        {
-          "title": "play Zootaire",
-          "url": "#/zootaire"
-        }
-      ]
-    }
-  ],
-  "wip": [
-    {
-      "title": "Swallow",
-      "at": "Ayogo Inc.",
-      "what": [
-        "UX/UI"
-      ],
-      "info": "Coming Soon.",
-      "imgdir": "swallow"
-    },
-    {
-      "title": "Fit2Me Early Stage",
-      "at": "Ayogo Inc.",
-      "what": [
-        "UI"
-      ],
-      "client": "AstraZeneca",
-      "info": "Coming Soon.",
-      "imgdir": "fit2me-early"
-    }
-  ],
-  "jff": [
-    {
       "title": "DD20",
-      "imgdir": "dd20"
+      "imgdir": "dd20",
+      "imgonly": true
     },
     {
       "title": "Krav Maga",
-      "imgdir": "krav-maga"
+      "imgdir": "krav-maga",
+      "imgonly": true
     },
     {
       "title": "Life is a dream",
-      "imgdir": "life-is-a-dream"
+      "imgdir": "life-is-a-dream",
+      "imgonly": true
     }
   ]
 }

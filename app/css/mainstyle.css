@@ -517,3 +517,9 @@ blockquote small {
   color: inherit;
   line-height: inherit;
 }
+
+#match3 {
+  width: 100%;
+  height: 580px;
+  border: none;
+}

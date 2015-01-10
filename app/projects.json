@@ -71,7 +71,7 @@
       "what": [
         "UX/UI"
       ],
-      "info": "Coming Soon.",
+      "info": "One of the big pharma companies asked us to hash out a tablet or mobile game idea for people who have problems swallowing after certain procedures. They concluded a user research with our help on couple subjects. The subjects preferred a fishing game that looked realistic. Hence the use of real life imagery and clean, simple ui. The game would have helped them practice their swallow. The hook goes deeper the harder they swallow and they could have steered the hook left or right with a tablet or phone to catch fishes. The longer they hold the longer they have to catch more fish.",
       "imgdir": "swallow"
     },
     {
@@ -83,7 +83,7 @@
         "AngularJS",
         "CreateJS"
       ],
-      "info": "Coming soon",
+      "info": "This is an internal mini-game for the Empower Framework that is used as a smaller part in several projects. The game uses canvas, createjs and angularjs and fully responsive meaning it plays on desktop, tablet and mobile devices no matter the screen size. Also is easily theme-able just by changing couple json files and image atlases.",
       "imgdir": "match3",
       "links": [
         {
@@ -102,7 +102,7 @@
         "jQuery"
       ],
       "client": "AstraZeneca",
-      "info": "Coming Soon.",
+      "info": "Fit2Me is a huge project with AstraZeneca to create a web portal to help people with type 2 diabetes. It helps them in every aspect of their lives from managing their levels, medication, exercises and diets. Also has a social aspect to it, people can connect share and learn from each other. The portal has a huge database of exercises and meals that will get custom fit to each user on signup with the help of your own coach. I created the first stages of UI when had to hand it off to get into programming. The last image is one of my early mockups.",
       "imgdir": "fit2me",
       "links": [
         {

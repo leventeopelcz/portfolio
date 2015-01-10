@@ -53,8 +53,8 @@
 <div class="row">
 	<section class="col-md-8 col-md-offset-2 matrix">
 		<div class="row">
-			<div class="col-xs-12 text-center" ng-repeat="img in imgs" ng-controller="project_thumbs_ctrl">
-              <img src="img/{{imgdir}}/{{img}}" class="img-responsive center-block project-img" alt="{{img}}">
+			<div class="col-xs-12 text-center" ng-repeat="img in imgs" ng-controller="project_images_ctrl">
+              <img ng-src="img/{{imgdir}}/{{img}}" class="img-responsive center-block project-img" alt="{{img}}">
 			</div>
 		</div>
 	</section>

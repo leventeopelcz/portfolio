@@ -79,10 +79,10 @@ angular.module('myApp.controllers', [])
 }])
 
 //---------------------------------------------
-//----- PROJECT THUMBS CONTROLLER -----//
+//----- PROJECT IMAGES CONTROLLER -----//
 //---------------------------------------------
 
-.controller('project_thumbs_ctrl', ['Images', 'ProjectImages', '$scope', '$routeParams', '$location', function(Images, ProjectImages, $scope, $routeParams, $location) {
+.controller('project_images_ctrl', ['Images', 'ProjectImages', '$scope', '$routeParams', '$location', function(Images, ProjectImages, $scope, $routeParams, $location) {
   var type = $location.path().split('/').reverse()[1];
   ProjectImages.get($scope.projects[type][$routeParams.projectId - 1].imgdir, function(response) {
     $scope.projectImages = response;

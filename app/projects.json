@@ -232,6 +232,31 @@
       "title": "Life is a dream",
       "imgdir": "life-is-a-dream",
       "imgonly": true
+    },
+    {
+      "title": "Buffalo Bill Movie Poster",
+      "imgdir": "buffalo-bill",
+      "imgonly": true
+    },
+    {
+      "title": "Abstract 1",
+      "imgdir": "abstract-1",
+      "imgonly": true
+    },
+    {
+      "title": "Abstract 2",
+      "imgdir": "abstract-2",
+      "imgonly": true
+    },
+    {
+      "title": "CSS Zen Garden",
+      "imgdir": "css-zen-garden",
+      "imgonly": true
+    },
+    {
+      "title": "Surrealism",
+      "imgdir": "surrealism",
+      "imgonly": true
     }
   ]
 }

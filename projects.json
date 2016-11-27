@@ -11,7 +11,8 @@
         "WordPress"
       ],
       "info": "Redesign of the ayogo website with the focus on ayogo's products rather than it's projects. After I finished with the comps in PS and created helper files -what you can see below- they could code the site in my total absence making it perfect without supervision. I like that. :)",
-      "imgdir": "ayogo-website-update"
+      "imgdir": "ayogo-website-update",
+      "imgs": 6 
     },
     {
       "title": "Ayogo - Empower",
@@ -23,7 +24,8 @@
         "AngularJS"
       ],
       "info": "Started out as an internal project to show off the possibilities of the ayogo framework to clients. One client loved it so much that hired us to do a project with the this UI. Worked closely with UX and Art to achieve a consistent look in art assets and UI.",
-      "imgdir": "empower"
+      "imgdir": "empower",
+      "imgs": 11
     },
     {
       "title": "Sodium Calculator",
@@ -38,6 +40,7 @@
       "client": "CBC - Marketplace",
       "info": "Suddenly we got an opportunity to work for CBC Marketplace on an online, interactive html5 and css3 based (so no flash) sodium calculator for their upcoming show. The deadline was super close, we only got two weeks before the show started. Becuse of budget and timing, Ayogo assigned this project to me as a one man army, though I got a programmer intern to help me out and start programming the logic parallel while I was designing the UI and UX. In this two week, my responsibilities spanned from talking to the client, keeping my boss in the loop, building a fast and non-redundant work process between me and Allen (my little helper, who helped a LOT), Designing UX/UI from scratch, using stock icons where possible for foods and at the end, ironing out bugs in the code. Oh, almost forgot to mention, that this 2 week was shortened by 2 days also because I requested some vacation time off before we even knew about this project, and that vacation time was really precious to me, because my girlfriend left the country, so wanted to spend my last days with her only. So even with -2 days, we delivered before time, way under budget and the client was super happy and impressed with the quality of work in this short time we had to deliver.",
       "imgdir": "cbc-sodium",
+      "imgs": 7,
       "links": [
         {
           "title": "check it out",
@@ -57,6 +60,7 @@
       "client": "DiabetesSisters",
       "info": "DiabetesSisters is a Non-profit organisation that helps women with diabetes. They organising talks and events. People can connect through the site, get help, share information, buy some branded wares and so on. All made in drupal so the client can keep updating it, modifying it as they see fit. Also had to work on older ie versions.",
       "imgdir": "diabetessisters",
+      "imgs": 8,
       "links": [
         {
           "title": "check it out",
@@ -72,7 +76,8 @@
         "UX/UI"
       ],
       "info": "One of the big pharma companies asked us to hash out a tablet or mobile game idea for people who have problems swallowing after certain procedures. They concluded a user research with our help on couple subjects. The subjects preferred a fishing game that looked realistic. Hence the use of real life imagery and clean, simple ui. The game would have helped them practice their swallow. The hook goes deeper the harder they swallow and they could have steered the hook left or right with a tablet or phone to catch fishes. The longer they hold the longer they have to catch more fish.",
-      "imgdir": "swallow"
+      "imgdir": "swallow",
+      "imgs": 4
     },
     {
       "title": "Match 3",
@@ -85,6 +90,7 @@
       ],
       "info": "This is an internal mini-game for the Empower Framework that is used as a smaller part in several projects. The game uses canvas, createjs and angularjs and fully responsive meaning it plays on desktop, tablet and mobile devices no matter the screen size. Also is easily theme-able just by changing couple json files and image atlases.",
       "imgdir": "match3",
+      "imgs": 1,
       "links": [
         {
           "title": "play Match 3",
@@ -104,6 +110,7 @@
       "client": "AstraZeneca",
       "info": "Fit2Me is a huge project with AstraZeneca to create a web portal to help people with type 2 diabetes. It helps them in every aspect of their lives from managing their levels, medication, exercises and diets. Also has a social aspect to it, people can connect share and learn from each other. The portal has a huge database of exercises and meals that will get custom fit to each user on signup with the help of your own coach. I created the first stages of UI when had to hand it off to get into programming. The last image is one of my early mockups.",
       "imgdir": "fit2me",
+      "imgs": 9,
       "links": [
         {
           "title": "check it out",
@@ -123,6 +130,7 @@
       ],
       "info": "My uncle (his name is Robert) grew beautiful roses of every kind from when I was a child. Actually my father used to earn a living from it too, he was one of the best around. But my father moved on to doing insurance and Robert stayed. He asked me not long ago - at the time of writing - if I could make him a website to sell his roses. I also suggested to put it up on social media. You know, nothing big. Nothing like the huge budget corporations at all. Just inviting friends and their friends, might someone want to buy from the actual gardener rather then from a retail flower store. It actually turned out that quite a bit of people found him through the site and social media and sold almost all his roses. He was one of my best client. He only cared to be out there as fast as possible. So I made him a minimalistic, simple one page trendy site that is responsive - works on all screen sizes resolutions and devices-. It took me one week from scratch. And they love it. Still. :)",
       "imgdir": "opelczrozsa",
+      "imgs": 1,
       "links": [
         {
           "title": "check it out",
@@ -150,6 +158,7 @@
       ],
       "info": "Ages ago, Death wanted to retire. However, in order to do that, he had to kill every living creature. In an ancient race of people, four brothers became heroes who fought Death. They harnessed the power of the elements — earth, air, fire and water — by each wearing a magical mask imbued with these powers. They fought valiantly and, ultimately, denied Death in his bid to destroy mankind. Yet they sacrificed their lives in the process to save the people they loved. And they left behind a fifth brother — a little boy — who had been too young to fight. Now, he is a man embarking on a quest to kill Death and avenge the demise of his brothers.",
       "imgdir": "brothers-tale",
+      "imgs": 4,
       "video": "3kTFfln_TRQ",
       "dropdowns": [
         {
@@ -192,6 +201,7 @@
       ],
       "info": "I got an assignment in University to create a soliter table game —not solitaire, the card game!— using Visual Studio. I loved the project so much that I decided to turn it into a Flash game. I turned my C# code into AS3 and created a cool, childish design for it. I wanted to make the game for kids to enhance their logic capacities. The goal of Zootaire is to reduce the number of stones —or in this case sheeps— all the way down to one by moving stones to the side of a neighboring stone, but only if there is an empty space. Movements can be made vertically or horizontally, not diagonally.",
       "imgdir": "zootaire",
+      "imgs": 2,
       "links": [
         {
           "title": "play Zootaire",
@@ -211,6 +221,7 @@
       ],
       "info": "I have a certain affinity for the games I played growing up. I loved Tower Defense games, so when my abilities in Flash developed, I was able to create my own using AS3. The point of the game is to protect your castle from ninjas and samurais hordes by placing different towers in the best possible spot. Players need to be careful, because there are invisible ninjas and other enemies who can attack and take out the towers. Players can sell, repair and upgrade their towers for better protection. Shogunee was an experiment in Flash development. My goal was to take on the challenge of creating a fully functional Flash game from scratch. The project was successful and was instrumental in developing my abilities with Action Script, Flash and Adobe Illustrator.",
       "imgdir": "shogunee",
+      "imgs": 1,
       "links": [
         {
           "title": "play Shogunee",
@@ -234,7 +245,7 @@
       "imgonly": true
     },
     {
-      "title": "Buffalo Bill Movie Poster",
+      "title": "Buffalo Bill Poster",
       "imgdir": "buffalo-bill",
       "imgonly": true
     },

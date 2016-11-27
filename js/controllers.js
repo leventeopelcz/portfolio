@@ -19,18 +19,17 @@ angular.module('myApp.controllers', [])
 //----- HOME THUMBS CONTROLLER -----//
 //---------------------------------------------
 
-.controller('home_thumbs_ctrl', ['ProjectImages', 'Images', '$scope', '$rootScope', 'Device', function(ProjectImages, Images, $scope, $rootScope, Device) {
-  ProjectImages.get($scope.project.imgdir+'/thumb/', function(response) {
-    $scope.projectImages = response;
-    $scope.imageLoading = true;
-    var image = 'img/' + $scope.project.imgdir + '/thumb/' + $scope.projectImages[0];
-    Images.Preload(image, function() {
-      $scope.stopSpinner();
+.controller('home_thumbs_ctrl', ['Images', '$scope', '$rootScope', 'Device', '$timeout', function(Images, $scope, $rootScope, Device, $timeout) {
+  $scope.imageLoading = true;
+  var image = 'img/' + $scope.project.imgdir + '/thumb/' + $scope.project.imgdir + '.jpg';
+  Images.Preload(image, function() {
+    $timeout(function() {
       $scope.imageLoading = false;
-      if(!$scope.$$phase) {
-        $scope.$digest();
-      }
-    });
+      $scope.stopSpinner(); 
+    }, 0);
+    if(!$scope.$$phase) {
+      $scope.$digest();
+    }
   });
   if(!Device.IsMobile() && $scope.$last) {
     if(typeof $rootScope.skrollr === 'undefined') {
@@ -63,9 +62,12 @@ angular.module('myApp.controllers', [])
     $scope.links 			= $scope.projects[type][$routeParams.projectId - 1].links;
     $scope.video            = $scope.projects[type][$routeParams.projectId - 1].video;
     $scope.imgonly          = $scope.projects[type][$routeParams.projectId - 1].imgonly;
-    ProjectImages.get($scope.projects[type][$routeParams.projectId - 1].imgdir, function(response) {
-      $scope.imgs = response;
-    });
+    $scope.imgs = $scope.projects[type][$routeParams.projectId - 1].imgs;
+    $scope.getNumber = function(num) {
+        return new Array(num);   
+    }
+
+    console.log($scope.imgs);
   });
 
   var computeWidth = function() {
